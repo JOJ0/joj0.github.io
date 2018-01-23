@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Hi!<br>
-My name is J0J0, I am a self taught musician, DJ, Open Source aficionado, Linux Sysadmin and recently started to build and hack electronic things. Most of my knowledge of anything I got from the internet. Now it&#39;s time to give something back: This is my blog, I hope you find something useful here.
+Hi, my name is J0J0, I am a self taught musician, DJ, Open Source aficionado, Linux Sysadmin and recently started to build and hack electronic things. Most of my knowledge of anything I got from the internet. Now it&#39;s time to give something back: This is my blog, I hope you find something useful here.
 
 ### More Information
 
-Find stuff about and from me on various other platforms:
+Find more stuff about and from me on various other platforms:
 
 [soundcloud.com/jojotodos](http://soundcloud.com/jojotodos), [youtube.com/user/jojotodos](http://youtube.com/user/jojotodos), [mixcloud.com/J0J0](http://mixcloud.com/J0J0)
 
