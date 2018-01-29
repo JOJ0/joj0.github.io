@@ -77,7 +77,22 @@ Happy outdoor hacking
 Designing the final layout of the control elements
 <br><br>
 
+![pic 13]({{ "/images/2017-09-10_adhs-tron/13.jpg" | absolute_url }})
 The final cardboard prototype
+<br><br>
 
-...
-...
+![pic 14]({{ "/images/2017-09-10_adhs-tron/14.jpg" | absolute_url }})
+
+<br><br>
+
+![pic 15]({{ "/images/2017-09-10_adhs-tron/15.jpg" | absolute_url }})
+
+<br><br>
+
+![pic 16]({{ "/images/2017-09-10_adhs-tron/16.jpg" | absolute_url }})
+
+<br><br>
+
+![pic 17]({{ "/images/2017-09-10_adhs-tron/17.jpg" | absolute_url }})
+
+<br><br>
