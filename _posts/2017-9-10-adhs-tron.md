@@ -7,20 +7,17 @@ The mission: My friend Lena&#39;s Korg Monotron should become controllable via M
 
 <br>
 
-![pic 1]({{ "/images/2017-09-10_adhs-tron/1.jpg" | absolute_url }})
-Starting Point: Monotron, a Perfboard and an Arduino Uno
-<br><br>
-
-![pic 2]({{ "/images/2017-09-10_adhs-tron/2.jpg" | absolute_url }})
-Naked-Tron
-<br><br>
+<div class="clearfix">
+{% include figure.html filename='/images/2017-09-10_adhs-tron/1.jpg' alt_text='pic 1' caption='Starting Point: Monotron, a Perfboard and an Arduino Uno' width="49%" float="left" %}
+{% include figure.html filename='/images/2017-09-10_adhs-tron/2.jpg' alt_text='pic 2' caption='Naked-Tron' width="49%" float="right" %}
+</div>
+<br>
 
 ![pic 3]({{ "/images/2017-09-10_adhs-tron/3.jpg" | absolute_url }})
-First goal reached: Arduino receives MIDI notes through MIDI input circuit
+First goal reached: Arduino receives MIDI notes through a MIDI input circuit
 <br><br>
 
-Video 1 an dieser Stelle
-
+{% include youtube.html id="5jWiUlhN29o" width="100%" %}
 Arduino receives MIDI through input circuit and triggers Gate and Pitch CV inputs on Monotron. As you can hear it&#39;s not quite a major or chromatic scale. Arduino Uno&#39;s 8bit DAC can&#39;t output precise enough voltages for Pitch CV.
 <br><br>
 
