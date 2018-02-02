@@ -21,7 +21,8 @@ First goal reached: Arduino receives MIDI notes through a MIDI input circuit
 Arduino receives MIDI through input circuit and triggers Gate and Pitch CV inputs on Monotron. As you can hear it&#39;s not quite a major or chromatic scale. Arduino Uno&#39;s 8bit DAC can&#39;t output precise enough voltages for Pitch CV.
 <br><br>
 
-![pic 4](/images/2017-09-10_adhs-tron/4.jpg)
+{% include figure.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
+{% include figure.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
 The solution to the Pitch Control Voltage problem with Arduino Uno: Microcontroller &#34;Teensy 3.2&#34;, equipped with a 12 bit DAC, precise enough to generate the needed voltages.
 <br><br>
 
