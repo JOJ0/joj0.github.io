@@ -33,7 +33,7 @@ Added two new features: Filter cutoff controllable via MIDI CC or MIDI velocity,
 The first cardboard prototype of Tron&#34;s new housing.
 <br><br>
 
-{% include youtube.html id="" width="100%" %}
+{% include youtube.html id="5XTypg-dH6w" width="100%" %}
 Filter controlled via MIDI CC (pink line), playing around with the resonance is always fun
 <br><br>
 
@@ -53,7 +53,7 @@ The almost finished perfboard
 Perfboard flipside
 <br><br>
 
-{% include youtube.html id="" width="100%" %}
+{% include youtube.html id="JBsHow5AMUg" width="100%" %}
 Features presented in order of appearance (If unpatient skip to 2:30 for some acidish sounds)
 * Filter cutoff and resonance controlled locally
 * Filter cutoff controlled via MIDI CC (pink line), resonance locally
