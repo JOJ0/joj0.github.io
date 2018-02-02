@@ -86,7 +86,7 @@ Drilling the case
 <br><br>
 
 ![pic 16](/images/2017-09-10_adhs-tron/16.jpg)
-Mounting the control elements in the case
+Mounting the control elements
 <br><br>
 
 ![pic 17](/images/2017-09-10_adhs-tron/17.jpg)
