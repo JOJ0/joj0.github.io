@@ -94,4 +94,5 @@ Mounting the control elements
 ADHS-Tron ready to roll!
 <br><br>
 
-Find the code to this project on github: https://github.com/joj0/adhs-tron. Feel free to fork, send issues and so on!
+Find the code to this project here: [github.com/joj0/adhs-tron](https://github.com/joj0/adhs-tron). Feel free to fork, send issues and so on!
+<br><br>
