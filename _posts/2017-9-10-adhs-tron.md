@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Story of ADHS-Tron
+comments: true
 last_modified_at: 2018-02-03
 ---
 
