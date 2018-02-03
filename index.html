@@ -8,7 +8,10 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="entry">
-        {{ post.date | date: '%B %d, %Y' }}
+        Written: {{ post.date | date: '%B %d, %Y' }}
+        {% if post.last_modified_at %}
+          (Updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
+        {% endif %}
       </div>
 
       <div class="entry">

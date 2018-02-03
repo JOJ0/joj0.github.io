@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Story of ADHS-Tron
+last_modified_at: 2018-02-03
 ---
 
 The mission: My friend Lena&#39;s Korg Monotron should become controllable via MIDI from a DAW. <br>
