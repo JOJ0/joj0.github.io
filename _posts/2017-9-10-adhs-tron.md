@@ -28,8 +28,8 @@ The code necessary for above functionality:
 <!--<script src="https://gist.github.com/JOJ0/518416dc60bfcbd5bf2322b101b25076.js"></script>-->
 {% gist 518416dc60bfcbd5bf2322b101b25076 %}
 
-At this point it's about time to tell you that that snippets you see on this page are reconstructed with help of my git history and I can't guarantee that it was completely working/bugfree at that particular commit. I you find something odd please leave a comment and I'm happy to help, correct it, whatever. On the bottom of this page you find a link to the final code that worked for me.
-
+At this point it's about time to tell you that the snippets you see on this page are reconstructed with the help of my git history and I can't guarantee that the program was completely working/bugfree at that particular commit. If you find something odd please leave a comment and I'm happy to help, correct it, whatever. On the bottom of this page you find a link to the final code that worked for me.
+<br><br>
 
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
@@ -49,7 +49,7 @@ whole ribbon Vbe offset<br>
 24.49mV@0deg<br>
 26.29mV@20deg<br>
 28.08mV@40deg<br>
-<br><br>
+<br>
 
 
 ![pic 5](/images/2017-09-10_adhs-tron/5.jpg)
