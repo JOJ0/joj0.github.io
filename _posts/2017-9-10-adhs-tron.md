@@ -23,13 +23,22 @@ First goal reached: Arduino receives MIDI notes through a MIDI input circuit
 Arduino receives MIDI through input circuit and triggers Gate and Pitch CV inputs on Monotron. As you can hear it&#39;s not quite a major or chromatic scale. Arduino Uno&#39;s 8bit DAC can&#39;t output precise enough voltages for Pitch CV.
 <br><br>
 
+This is the code for above functionality:
+<script src="http://gist-it.appspot.com/https://github.com/JOJ0/ADHS-Tron/blob/0d57429476b3d251b1390e9532fc67db75ba6be8/hyperactron.ino"></script>
+<br><br>
+
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
 The solution to the Pitch Control Voltage problem with Arduino Uno: Microcontroller &#34;Teensy 3.2&#34;, equipped with a 12 bit DAC, precise enough to generate the needed voltages.
 <br><br>
 
+Arduino compatible code needs to be changed slightly to run on a Teensy (different Serial ports and obviously pin numbers):
+<script src="http://gist-it.appspot.com/https://github.com/JOJ0/ADHS-Tron/blob/1ae1e123f3df8902e356ed3d87fe8f05327972fd/hyperactron.ino?slice=1:23"></script>
+<br><br>
+
+
 ![pic 5](/images/2017-09-10_adhs-tron/5.jpg)
-Added two new features: Filter cutoff controllable via MIDI CC or MIDI velocity, MIDI control can be switched off to keep original onboard filter control intact.
+Added two new features: Filter cutoff controllable via MIDI CC or MIDI velocity, MIDI control can be switched off to keep original onboard filter control intact (see bottom of post for code)
 <br><br>
 
 ![pic 6](/images/2017-09-10_adhs-tron/6.jpg)
@@ -96,5 +105,5 @@ Mounting the control elements
 ADHS-Tron ready to roll!
 <br><br>
 
-Find the code to this project here: [github.com/joj0/adhs-tron](https://github.com/joj0/adhs-tron). Feel free to fork, send issues and so on!
+Find the final code to this project here: [github.com/joj0/adhs-tron](https://github.com/joj0/adhs-tron). Feel free to fork, send issues and so on!
 <br><br>
