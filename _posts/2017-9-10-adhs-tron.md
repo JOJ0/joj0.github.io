@@ -25,19 +25,27 @@ Arduino receives MIDI through input circuit and triggers Gate and Pitch CV input
 
 The code necessary for above functionality:
 <!--<script src="http://gist-it.appspot.com/https://github.com/JOJ0/ADHS-Tron/blob/0d57429476b3d251b1390e9532fc67db75ba6be8/hyperactron.ino"></script>-->
-
 <!--<script src="https://gist.github.com/JOJ0/518416dc60bfcbd5bf2322b101b25076.js"></script>-->
 {% gist 518416dc60bfcbd5bf2322b101b25076 %}
-If you don't see code above here, there is something wrong with pulling the snippet from gist.github.com
-<br><br>
 
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
 The solution to the Pitch Control Voltage problem with Arduino Uno: Microcontroller &#34;Teensy 3.2&#34;, equipped with a 12 bit DAC, precise enough to generate the needed voltages.
 <br><br>
 
-Arduino compatible code needs to be changed slightly to run on a Teensy (different Serial ports and obviously pin numbers):
-<script src="http://gist-it.appspot.com/https://github.com/JOJ0/ADHS-Tron/blob/1ae1e123f3df8902e356ed3d87fe8f05327972fd/hyperactron.ino?slice=1:23"></script>
+Arduino compatible code needs to be changed slightly to run on a Teensy (different serial ports and obviously pin numbers):
+<!--<script src="http://gist-it.appspot.com/https://github.com/JOJ0/ADHS-Tron/blob/1ae1e123f3df8902e356ed3d87fe8f05327972fd/hyperactron.ino?slice=1:23"></script>-->
+{% gist 84f34b373e50df24faadbd5e51d7d514 %}
+
+At that time I was not quite sure how I could possibly get the pitches right, I just did not know what the volts/octave definition is for the Monotron. After hours of trial and error I came up with this formula that sounded correctly over almost a 3 octave range (the lowest 3 notes always are a bit too low if you tune your Monotron to about 10:00 o'clock):
+{% gist e623e3313837de6596103585f59856fd %}
+
+Weeks later I found a little mark on the freely available Monotron schematic that probably would have helped a little! ;-)
+
+whole ribbon Vbe offset<br>
+24.49mV@0deg<br>
+26.29mV@20deg<br>
+28.08mV@40deg<br>
 <br><br>
 
 
