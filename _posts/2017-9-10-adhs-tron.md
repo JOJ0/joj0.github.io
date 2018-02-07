@@ -28,6 +28,9 @@ The code necessary for above functionality:
 <!--<script src="https://gist.github.com/JOJ0/518416dc60bfcbd5bf2322b101b25076.js"></script>-->
 {% gist 518416dc60bfcbd5bf2322b101b25076 %}
 
+At this point it's about time to tell you that that snippets you see on this page are reconstructed with help of my git history and I can't guarantee that it was completely working/bugfree at that particular commit. I you find something odd please leave a comment and I'm happy to help, correct it, whatever. On the bottom of this page you find a link to the final code that worked for me.
+
+
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
 {% include figure.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
 The solution to the Pitch Control Voltage problem with Arduino Uno: Microcontroller &#34;Teensy 3.2&#34;, equipped with a 12 bit DAC, precise enough to generate the needed voltages.
