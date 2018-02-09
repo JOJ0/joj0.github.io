@@ -7,18 +7,23 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="entry">
-        Written: {{ post.date | date: '%B %d, %Y' }}
+
+        <em class="timestamp">Written: {{ post.date | date: '%B %d, %Y' }}
         {% if post.last_modified_at %}
-          (Updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
+          (Last updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
         {% endif %}
+        </em>
+
+      <div class="excerpt">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.excerpt }}
+        </a>
       </div>
 
       <div class="entry">
-        {{ post.excerpt }}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more</a>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
