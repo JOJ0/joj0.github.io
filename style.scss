@@ -205,9 +205,12 @@ iframe.yt {
 
 .site-avatar {
   float: left;
+  //width: 70px;
   width: 70px;
+  //height: 70px;
   height: 70px;
   margin-right: 15px;
+  //border: 1px solid $darkGray; // jojo tmp
 
   @include mobile {
     float: none;

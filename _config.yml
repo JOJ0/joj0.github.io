@@ -9,7 +9,9 @@ name: STUFF I DO
 description: J0J0s blog from hell
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/JOJ0/joj0.github.io/master/images/jt_noframe_bigger02_altrosa.png
+#avatar: https://raw.githubusercontent.com/JOJ0/joj0.github.io/master/images/jt_noframe_bigger02_altrosa.png
+avatar: https://joj0.github.io/images/jt_noframe_bigger05_altrosa.svg
+#avatar: http://localhost:4000/images/jt_noframe_bigger05_altrosa.svg
 
 #
 # Flags below are optional
