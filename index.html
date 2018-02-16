@@ -7,17 +7,15 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <em class="timestamp">Written: {{ post.date | date: '%B %d, %Y' }}
-        {% if post.last_modified_at %}
-          (Last updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>)
-        {% endif %}
-        </em>
-
       <div class="excerpt">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.excerpt }}
-        </a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a>
+      </div>
+
+      <div class="timestamp">
+        Written: {{ post.date | date: '%B %d, %Y' }}
+        {% if post.last_modified_at %}
+          -  Last updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>
+        {% endif %}
       </div>
 
       <div class="entry">
