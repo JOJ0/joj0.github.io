@@ -1,7 +1,7 @@
 {% if include.width != '' %}
-  <div style="width: {{include.width}}; margin:0 auto;">
+  <div class="outer_ytcontainer" style="width: {{include.width}}; margin-top:0 auto; margin-left:0 auto; margin-right:0 auto;">
 {% else %}
-  <div>
+  <div class="outer_ytcontainer">
 {% endif %}
   <div class="ytcontainer">
     <iframe class="yt" allowfullscreen src="https://www.youtube.com/embed/{{include.id}}"></iframe>
