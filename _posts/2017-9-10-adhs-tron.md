@@ -105,7 +105,6 @@ The final cardboard prototype
 
 ![pic 14](/images/2017-09-10_adhs-tron/14.jpg)
 Inside the prototype, trying to fit the cables in the case...
-
 <br><br>
 
 ![pic 15](/images/2017-09-10_adhs-tron/15.jpg)
