@@ -44,7 +44,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  //margin: 1em 0 15px;
+  margin: 1em 0 5px;
   padding: 0;
 
   @include mobile {
@@ -56,7 +57,7 @@ h1 {
   //font-size: 26px;
   //font-size: 29px; // pre 2018-02-15
   font-size: 30px;
-  margin: 1em 0 0px;
+  //margin: 1em 0 15px;
   //margin: 0.7em 0 0px;
   line-height: 1.7;
   a {
@@ -329,6 +330,10 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+  }
+
+  h1.postlist {
+    margin: 1em 0 0px;
   }
 
   .comments {
