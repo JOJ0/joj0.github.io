@@ -267,12 +267,14 @@ iframe.yt {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  //margin: -5px 0 0 0;
+  margin-top: -5px;
+  margin-left: 2.5px;
   color: $gray;
   //font-size: 16px;
   font-size: 16px;
   //font-family: $ptMono; // jojo
-  letter-spacing: 1px; // jojo
+  letter-spacing: 2.95px; // jojo
 
   @include mobile {
     margin: 3px 0;
