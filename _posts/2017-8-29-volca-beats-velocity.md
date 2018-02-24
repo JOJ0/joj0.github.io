@@ -3,6 +3,7 @@ layout: post
 title: Volca Beats learns MIDI Velocity
 comments: true
 last_modified_at: 2018-02-24
+image: https://www.klangfarbe.com/bilder/S/A-S37948-2-1.jpg
 ---
 
 Out of the box the Volca Beats is not velocity sensitive, neither when triggered via MIDI, nor when using the onboard 16-step sequencer. 
