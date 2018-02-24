@@ -151,7 +151,7 @@ on runme(message)
 end runme
 ~~~
 
-Download my [MidiPipe config file](https://raw.githubusercontent.com/JOJ0/joj0.github.io/master/images/2017-9-29_volca-beats-velocity/VlcBts_translate_Velocity_to_CC_v4_ESI_P4.mipi) and if you not already have, [MidiPipe](http://www.subtlesoft.square7.net).
+Download my [MidiPipe config file](https://joj0.github.io/images/2017-8-29_volca-beats-velocity/VlcBts_translate_Velocity_to_CC_v4_ESI_P4.mipi) and if you not already have, [MidiPipe](http://www.subtlesoft.square7.net).
 
 In your DAW you now have to send the output of the MIDI track you use for triggering the Volca to "Midi Pipe Input1".
 
