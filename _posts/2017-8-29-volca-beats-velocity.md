@@ -11,7 +11,7 @@ I was not happy when I found this out and immediately tried to work around the p
 
 So these are the CC numbers controlling the volume levels
 
-~~~
+~~~ applescript
 PART LEVEL KICK     40
 PART LEVEL SNARE    41
 PART LEVEL LO TOM   42
@@ -26,7 +26,7 @@ PART LEVEL CRASH    49
 
 My first idea was to just use automation in my MIDI clips to alter the notes&#39; volume when controlling it out of Ableton Live. Let&#39;s take e.g. a simple closed hihat pattern, where you just want to lower the volume of every other note. You would draw an automation line for CC 44 that looks similar to the following. Note that reducing the CC's value has to always be done _before_ a note is played.
 
-~~~
+~~~ applescript
 +---------+         +---------+         +---------+         +---------+
           |         |         |         |         |         |         |
           |         |         |         |         |         |         |
@@ -80,7 +80,8 @@ The settings of the modules in detail:
 The AList modules are for debugging, they show how the MIDI messages look like at the current point in the pipe.
 
 This is the first AppleScript:
-~~~
+
+~~~ applescript
 # translate note to CC
 
 # comment out for debugging from AppleScript editor
@@ -115,7 +116,8 @@ end runme
 ~~~
 
 And this is the second one:
-~~~
+
+~~~ applescript
 # translate CC back to note
 
 # comment out for debugging from AppleScript editor
@@ -148,8 +150,6 @@ on runme(message)
   end repeat
   return message
 end runme
-
-
 ~~~
 
 In your DAW you now have to send the output of the MIDI track you use for triggering the Volca to "Midi Pipe Input1".
