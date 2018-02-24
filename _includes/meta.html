@@ -16,3 +16,11 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
+
+    {% if page.image %}
+    <meta property="og:image" content="{{page.image}}" />
+    <meta name="twitter:image" content="{{page.image}}" />
+    {% else %}
+    <meta property="og:image" content="https://https://raw.githubusercontent.com/JOJ0/joj0.github.io/master/images/jt_noframe_bigger05_altrosa.svg" />
+    <meta name="twitter:image" content="https://https://raw.githubusercontent.com/JOJ0/joj0.github.io/master/images/jt_noframe_bigger05_altrosa.svg" />
+    {% endif %}
