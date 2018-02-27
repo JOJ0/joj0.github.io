@@ -140,10 +140,13 @@ img {
   max-width: none;
 }
 
+// at bottom of post
 .date {
   //border-top: 1px solid; // jojo tmp: check border space
   font-style: italic;
   color: $gray;
+  //font-size: 16px;
+  margin-top: 20px;
 }
 
 // Specify the color of the selection
