@@ -7,7 +7,11 @@
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:type" content="article" />
+    {% if post.published %}
+    <meta property="article:published_time" content="{{page.published}}" />
+    {% else %}
     <meta property="article:published_time" content="{{page.date}}" />
+    {% endif %}
     <!-- page.modified isn't a natural Jekyll property, but it can be added. -->
     {% if post.last_modified_at %}
     <meta property="article:modified_time" content="{{post.last_modified_at}}" />

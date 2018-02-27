@@ -2,7 +2,8 @@
 layout: post
 title: Volca Beats learns MIDI Velocity
 comments: true
-last_modified_at: 2018-02-24
+published: 2018-02-24
+last_modified_at: 2018-02-25
 image: https://www.klangfarbe.com/bilder/S/A-S37948-2-1.jpg
 ---
 
