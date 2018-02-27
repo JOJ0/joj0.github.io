@@ -11,9 +11,9 @@ layout: default
 
   <div class="date">
     {% if page.published %}
-      This post was first published on {{ page.published | date: "%b %-d, %Y" }}
+      This article was first published on {{ page.published | date: "%b %-d, %Y" }}
     {% else %}
-      This post was first published on {{ page.date | date: "%b %-d, %Y" }}
+      This article was first published on {{ page.date | date: "%b %-d, %Y" }}
     {% endif %}
     {% if page.last_modified_at %}
       and last updated on {{ page.last_modified_at | date: "%b %-d, %Y" }}.
