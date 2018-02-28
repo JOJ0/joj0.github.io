@@ -10,10 +10,12 @@ layout: default
   </div>
 
   <div class="date">
-    {% if page.published %}
+    {% if page.published and page.last_modified_at %}
       This article was first published on {{ page.published | date: "%b %-d, %Y" }}
+    {% elsif page.published %}
+      This article was published on {{ page.published | date: "%b %-d, %Y" }}
     {% else %}
-      This article was first published on {{ page.date | date: "%b %-d, %Y" }}
+      This article was published on {{ page.date | date: "%b %-d, %Y" }}
     {% endif %}
     {% if page.last_modified_at %}
       and last updated on {{ page.last_modified_at | date: "%b %-d, %Y" }}.
