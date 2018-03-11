@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Story of ADHS-Tron
+title: The story of ADHS-Tron
 comments: true
 published: 2018-01-31
 last_modified_at: 2018-02-07
@@ -120,5 +120,5 @@ Mounting the control elements
 ADHS-Tron ready to roll!
 <br><br>
 
-Find the final code to this project here: [github.com/joj0/adhs-tron](https://github.com/joj0/adhs-tron). Feel free to fork, send issues and so on!
+Get the final code to this project here: [github.com/joj0/adhs-tron](https://github.com/joj0/adhs-tron). Feel free to fork, send issues and so on!
 <br><br>
