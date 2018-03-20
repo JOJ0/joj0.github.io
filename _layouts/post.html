@@ -13,15 +13,15 @@ layout: default
     {% if page.published and page.last_modified_at %}
       This article was first published on {{ page.published | date: "%b %-d, %Y" }}
     {% elsif page.published %}
-      This article was published on {{ page.published | date: "%b %-d, %Y" }}
+      This article was published on {{ page.published | date: "%b %-d, %Y" }}.
     {% else %}
-      This article was published on {{ page.date | date: "%b %-d, %Y" }}
+      This article was published on {{ page.date | date: "%b %-d, %Y" }}.
     {% endif %}
     {% if page.last_modified_at %}
       and last updated on {{ page.last_modified_at | date: "%b %-d, %Y" }}.
     {% endif %}
     {% unless page.published ==  nil %}
-    I built/coded/did this project around {{ page.date | date: "%B %e, %Y" }}
+    I built/coded/did this project around {{ page.date | date: "%B %e, %Y" }}.
     {% endunless %}
     <a href="#top" style="float: right;">jump to top</a>
   </div>
