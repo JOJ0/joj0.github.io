@@ -321,11 +321,17 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  p {
+    text-align: left;
+  }
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+  p {
+    text-align: left;
+  }
 }
 
 .post {
@@ -336,6 +342,10 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+  }
+
+  p {
+    text-align: justify;
   }
 
   h1.postlist {
