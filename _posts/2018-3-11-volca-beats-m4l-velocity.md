@@ -12,7 +12,7 @@ I got some feedback on my last [post]({% post_url 2017-8-29-volca-beats-velocity
 [post]({% post_url 2017-8-29-volca-beats-velocity %})
 {:/comment}
 
-{% include figure.html filename='/images/2018-3-11_volca-beats-m4l-velocity/VolcaBeatsVelocitizer-v1.0-screenshot.png' alt_text='Velocitizer screenshot' caption='' width="39%" float="left" margin="0 10px 0 0" %}
+{% include figure.html filename='/images/2018-3-11_volca-beats-m4l-velocity/VolcaBeatsVelocitizer-v1.0-screenshot.png' alt_text='Velocitizer screenshot' caption='' width="49%" float="left" margin="0 10px 0 0" %}
 
 <p style="margin-top: -5px;">As already described in detail in the mentioned post, the Volca does not interpret a MIDI note's velocity, each drum's volume can only be changed by sending a Control Change command. My M4L device simply translates the MIDI note's velocitiy values to the corresponding CC values and prepends each note hit with such a MIDI message. It also visualizes each drum hit and its velocity.
 </p>
