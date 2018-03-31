@@ -44,7 +44,7 @@ This is the contents of "coll ---NotesToCC":
 67, 48;
 49, 49;
 ~~~
-If e.g. you send number 36 (Note C2 - Kick drum) into the colls input (top left of object), it sends out number 40 on it's output (bottom left of object), which is the CC number that controls the Kicks volume.
+If e.g. you send number 36 (Note C2 - Kick drum) into the colls input (top left of object), it sends out number 40 on its output (bottom left of object), which is the CC number that controls the Kicks volume.
 
 As you can see in the picture I used more colls to map stuff. "coll ---NamesToNotes" maps the debug drum buttons names to the right MIDI note numbers e.g.:
 ~~~ python
@@ -61,7 +61,7 @@ and the third one, "coll ---NotesToSliders", maps the note numbers to the  "slid
 38, 1;
 ...
 ~~~
-One detail that cost me quite some troubleshooting time is that a coll does not save it's data by default, you have to enable a checkbox in the inspector window "Save Data With Patcher", otherwise the coll is empty, the next time you open the device! Another feature of a coll, that I actually did not use in this procject but worth knowing: It cannot only send out existing data, it can also save new data. If you send it two values at the same time (in Max speak this is called a "list"), so e.g. if you send "12 34" into it's input, the coll would be appended with another line that looks like this: 
+One detail that cost me quite some troubleshooting time is that a coll does not save its data by default, you have to enable a checkbox in the inspector window "Save Data With Patcher", otherwise the coll is empty, the next time you open the device! Another feature of a coll, that I actually did not use in this procject but worth knowing: It cannot only send out existing data, it can also save new data. If you send it two values at the same time (in Max speak this is called a "list"), so e.g. if you send "12 34" into its input, the coll would be appended with another line that looks like this: 
 
 ~~~ python
 12, 34;
