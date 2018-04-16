@@ -9,6 +9,10 @@ image: https://www.klangfarbe.com/bilder/S/A-S37948-2-1.jpg
 
 Out of the box the Volca Beats is not velocity sensitive, neither when triggered via MIDI, nor when using the onboard 16-step sequencer. 
 
+{::comment}
+![Volca Beats pic1](https://www.klangfarbe.com/bilder/S/A-S37948-2-1.jpg)
+{:/comment}
+
 I was not happy when I found this out and immediately tried to work around the problem. What the Beats _does_ understand is altering the volume of the different drum parts via a MIDI Control Change (CC) message. According to Korg&#39;s official [MIDI implementation chart](http://i.korg.com/uploads/Support/USA_volcabeats_MIDI_Chart_E.pdf) these are the CC numbers controlling the volume levels:
 
 ~~~ applescript
