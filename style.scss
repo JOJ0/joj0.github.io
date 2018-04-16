@@ -142,7 +142,7 @@ img {
 }
 
 // timestamp infos at bottom of post
-.date {
+div.date {
   //border-top: 1px solid; // jojo tmp: check border space
   font-style: italic;
   color: $gray;
@@ -153,6 +153,11 @@ img {
     width: 550px; 
     float: left;
     display: inline-block;
+
+    @include mobile {
+      width: 215px;
+    }
+
   }
   .right-part {
     float: right;

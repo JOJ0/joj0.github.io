@@ -9,7 +9,7 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
+  <div class="date clearfix">
     <span class="left-part">
       {% if page.published and page.last_modified_at %}
         This article was first published on {{ page.published | date: "%b %-d, %Y" }}
