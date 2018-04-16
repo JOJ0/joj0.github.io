@@ -221,39 +221,97 @@ iframe.yt {
 }
 
 // ### my photo gallery ##
-div.photo-gallery {
+div.photo-gallery-frame {
   //width: 800px; //width is set in .container
-  margin: 0 auto;
+  //margin: 0 auto;
   overflow: auto;
+  margin-left:-5px;
+  margin-right:-5px;
 }
 
-ul.photo-gallery {
+ul.photo-gallery-list {
   list-style-type: none;
   padding-left: 0px;
+  margin: 0px;
+  //border: 1px solid;
+
+  li img {
+    float: left;
+    //margin: 10px;
+    margin: 5px;
+    //border: 5px solid #fff;
+    //border: 5px solid $darkerGray;
+    border: 5px solid $rosa;
+    //border: 5px solid transparent;
+    max-width: 240px;
+  
+    //-webkit-transition: box-shadow 0.5s ease;
+    //-moz-transition: box-shadow 0.5s ease;
+    //-o-transition: box-shadow 0.5s ease;
+    //-ms-transition: box-shadow 0.5s ease;
+    //transition: box-shadow 0.5s ease;
+  }
+  
+  li img:hover {
+    //-webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+    //-webkit-box-shadow: 0px 0px 5px rgba(255,255,255,0.9);
+    //box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+    //box-shadow: 0px 0px 5px rgba(255,255,255,0.9);
+  }
+
 }
 
-li img {
-  float: left;
-  //margin: 10px;
-  margin: 5px;
-  //border: 5px solid #fff;
+
+// ### on photo page (full size pic) ##
+div.gallery-photo-figure {
+  //border: 1px solid $black;
+  text-align: center;
+}
+img.gallery-photo-zoom {
+  //float: left;
+  margin: 0px 0px 0px 0px;
   //border: 5px solid $darkerGray;
   border: 5px solid $rosa;
   //border: 5px solid transparent;
-  max-width: 230px;
-
-  -webkit-transition: box-shadow 0.5s ease;
-  -moz-transition: box-shadow 0.5s ease;
-  -o-transition: box-shadow 0.5s ease;
-  -ms-transition: box-shadow 0.5s ease;
-  transition: box-shadow 0.5s ease;
 }
 
-li img:hover {
-  //-webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
-  -webkit-box-shadow: 0px 0px 5px rgba(255,255,255,0.9);
-  //box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
-  box-shadow: 0px 0px 5px rgba(255,255,255,0.9);
+div.gallery-photo-nav {
+  //border: 1px solid $black;
+  text-transform: uppercase;
+  //font-size: 14px;
+  font-size: 20px;
+  //margin-top: 14px;
+  margin-top: -2.5px;
+  //line-height: 1.5; 
+}
+div.gallery-photo-nav-inactive {
+  text-transform: uppercase;
+  //font-size: 14px;
+  font-size: 20px;
+  //margin-top: 14px;
+  //line-height: 1.5; 
+  a {
+    color: $lightGray;
+  }
+}
+div.gallery-photo-caption {
+  //border: 1px solid $black;
+  display: inline-block;
+  //padding: -10px;
+  //vertical-align: top;
+  line-height: 1.5; 
+  figcaption {
+    margin-top: 0px;
+  }
+}
+div.gallery-photo-nav-overview {
+  //border: 1px solid $black;
+  //text-transform: uppercase;
+  //font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  //display: inline-block;
+  div {display:inline-block;}
 }
 
 /*********************/
