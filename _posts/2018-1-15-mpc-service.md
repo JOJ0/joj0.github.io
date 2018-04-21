@@ -4,6 +4,7 @@ title: MPC 1000 service - a Photo-Love-Story
 comments: true
 published: 2018-04-17
 image: /images/2018-1-15-mpc-service/IMG_6210.png
+draft: true
 ---
 Alright, probably every MPC owner experiences it after a while: Buttons getting sluggish, you have to really bang them hard to still get a function.
 
