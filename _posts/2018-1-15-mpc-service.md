@@ -3,16 +3,12 @@ layout: post
 title: MPC 1000 service - a Photo-Love-Story
 comments: true
 published: 2018-04-17
-image: /images/2018-1-15-mpc-service/IMG_6210.png
-draft: true
+image: /images/2018-1-15-mpc-service/IMG_6210.jpg
+draft: false
 ---
 Alright, probably every MPC owner experiences it after a while: Buttons getting sluggish, you have to really bang them hard to still get a function.
 
-{::comment}
-[post]({% post_url 2017-8-29-volca-beats-velocity %})
-{:/comment}
-
-Especially with heavy used buttons like "cursor right", which is also used as kind of a "return" key it can get pretty annoying. But let's face it: These units are dated! According to the timestamps on the circuit boards, mine was built around 2009, that's 9 years ago now. Some parts are even stamped with 2006. I suppose the MPC 500 and 2500, which where produced around the same time (2005~2010) suffer from similar problems.
+Especially with heavy used buttons like "cursor right", which is also used as kind of a "return" key it can get pretty annoying. But let's face it: These units are dated! According to the timestamps on the circuit boards, mine was built around 2009, that's 9 years ago now. Some parts are even stamped with 2006. I suppose the MPC 500 and 2500, which AKAI produced around the same time (2005~2010) suffer from similar problems.
 
 You guessed it, this post is about repairing or rather replacing these buttons.
 
@@ -20,7 +16,7 @@ Don't be overwhelmed because of the amount of pictures, it's not as much work as
 
 For recommendations where to buy the switches and what types you need, jump to [bottom of post](#get_switches)
 
-Ok, so this is the Photo-Love-Story. If you click on the thumbnails I put some short descriptions, for example how many screws you'd have to take out or what to pay special attention to. If you've never soldered out a component before, watch a youtube video and practice on some junk first. Also: soldering-out with four hands is easier than with two!
+Ok, so this is the Photo-Love-Story. If you click on the thumbnails you'll find some short descriptions, for example how many screws you'd have to take out or what to pay special attention to. If you've never soldered out a component before, watch a youtube video and practice on some junk first. Also: soldering-out with four hands is easier than with two!
 
 <div class="photo-gallery-frame clearfix">
   <ul class="photo-gallery-list">
@@ -37,8 +33,6 @@ Ok, so this is the Photo-Love-Story. If you click on the thumbnails I put some s
 ## Where to get the switches? ##
 
 For general electronics tools and components you could order at reichelt.at, it's a well sorted german electronics online shop with reasonable prices and cheap shippping costs! So if you are somewhere in Europe this is a nice option. You want [this one](https://secure.reichelt.at/TASTER-9302/3/index.html?ACTION=3&LA=55&ARTICLE=44579)
-
-My personal favorite for music related electronics is musikding.de. They have a very good selection of quality spare parts for music equipment (pots, switches, LED bezels, tubes ...). Shipping costs are also low and you have the option to add products to your current order after you initally sent it. [This](https://www.musikding.de/Microswitch-6x6mm) would be the switches you need.
 
 I bought my switches at conrad.at as far as I remember. Even though I wouldn't recommend buying any stuff there because they overprice literally everything, you still wouldn't pay much for those there. You could get [this one](https://www.conrad.at/de/drucktaster-24-vdc-005-a-1-x-ausein-te-connectivity-1825910-2-tastend-1-st-701749.html) or [that one](https://www.conrad.at/de/drucktaster-12-vdc-005-a-1-x-ausein-namae-electronics-jtp-1130-tastend-1-st-705247.html)
 
