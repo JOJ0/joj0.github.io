@@ -2,7 +2,7 @@
 layout: post
 title: MPC 1000 service - a Photo-Love-Story
 comments: true
-published: 2018-04-17
+published: 2018-04-25
 image: /images/2018-1-15-mpc-service/IMG_6210.jpg
 draft: false
 ---
