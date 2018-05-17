@@ -3,13 +3,14 @@ layout: post
 title: Volca Beats Velocity - Max for Live edition
 comments: true
 published: 2018-03-23
-image: /images/2018-3-11_volca-beats-m4l-velocity/VolcaBeatsVelocitizer-v1.0-screenshot-thumb.png
+image: /images/2018-3-11_volca-beats-m4l-velocity/VolcaBeatsVelocitizer-v1.0-screenshot.png
 ---
 
 I got some feedback on my last [post]({% post_url 2017-8-29-volca-beats-velocity %}), learned some Max 4 Live and managed to create a device that hacks MIDI velocity sensitivity into the Korg Volca Beats.
 
 {::comment}
 [post]({% post_url 2017-8-29-volca-beats-velocity %})
+image: /images/2018-3-11_volca-beats-m4l-velocity/VolcaBeatsVelocitizer-v1.0-screenshot-thumb.png
 {:/comment}
 
 {% include figure.html filename='/images/2018-3-11_volca-beats-m4l-velocity/VolcaBeatsVelocitizer-v1.0-screenshot.png' alt_text='Velocitizer screenshot' caption='' width="49%" float="left" margin="0 10px 0 0" %}

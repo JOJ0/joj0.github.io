@@ -406,7 +406,7 @@ nav {
   //font-family: $helveticaNeue;
   font-family: $ptSans;
   //font-size: 18px;
-  font-size: 18px;
+  font-size: 22px;
 
   @include mobile {
     float: none;
@@ -467,6 +467,20 @@ nav {
     margin: 1em 0 0px;
   }
 
+  div.postlist-pic {
+    float:left;
+    margin-right:7px;
+  }
+
+  img.postlist {
+    width:170px;
+    //border:5px solid $lightGray;
+    //border:5px solid $gray;
+    //border:3px solid $darkGray;
+    //border:5px solid $rosa;
+    border:3px solid $rosa;
+  }
+
   .comments {
     margin-top: 10px;
   }
@@ -491,7 +505,8 @@ nav {
     //border-top: 1px solid; // jojo tmp check margin
 
     p {
-      margin-top: 6px;
+      //margin-top: 6px; // value before adding pics to index
+      margin-top: -2px;
       margin-bottom: 14px;
     }
 
