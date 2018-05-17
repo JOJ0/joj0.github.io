@@ -508,6 +508,12 @@ nav {
       //margin-top: 6px; // value before adding pics to index
       margin-top: -2px;
       margin-bottom: 14px;
+
+      @include mobile {
+        margin-top: 0px;
+        text-align: justify;
+      }
+
     }
 
     a {
