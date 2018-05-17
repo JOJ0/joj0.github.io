@@ -66,7 +66,9 @@ h1 {
   }
 
   @include mobile {
-    font-size: 20px;
+    font-size: 26px;
+    line-height: 1.4;
+    //margin-bottom: 10px;
   }
 }
 
