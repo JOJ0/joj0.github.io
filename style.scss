@@ -479,6 +479,10 @@ nav {
     //border:3px solid $darkGray;
     //border:5px solid $rosa;
     border:3px solid $rosa;
+
+    @include mobile {
+      width:130px;
+    }
   }
 
   .comments {
@@ -510,7 +514,7 @@ nav {
       margin-bottom: 14px;
 
       @include mobile {
-        margin-top: 0px;
+        margin-top: -4px;
         text-align: justify;
       }
 
