@@ -308,6 +308,10 @@ div.gallery-photo-caption {
   figcaption {
     margin-top: 0px;
   }
+
+  @include mobile {
+    max-width: 250px;
+  }
 }
 div.gallery-photo-nav-overview {
   //border: 1px solid $black;
