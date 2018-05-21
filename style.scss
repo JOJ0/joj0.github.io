@@ -257,6 +257,14 @@ ul.photo-gallery-list {
     //-o-transition: box-shadow 0.5s ease;
     //-ms-transition: box-shadow 0.5s ease;
     //transition: box-shadow 0.5s ease;
+
+    @include mobile {
+      //clear: both;
+      //float: none;
+      max-width: 145px;
+    }
+
+    
   }
   
   li img:hover {
