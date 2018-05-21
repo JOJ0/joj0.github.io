@@ -66,7 +66,9 @@ h1 {
   }
 
   @include mobile {
-    font-size: 20px;
+    font-size: 26px;
+    line-height: 1.4;
+    //margin-bottom: 10px;
   }
 }
 
@@ -469,6 +471,7 @@ nav {
 
   h1.postlist {
     margin: 1em 0 0px;
+    margin-bottom: 10px;
   }
 
   div.postlist-pic {
@@ -483,6 +486,10 @@ nav {
     //border:3px solid $darkGray;
     //border:5px solid $rosa;
     border:3px solid $rosa;
+
+    @include mobile {
+      width:130px;
+    }
   }
 
   .comments {
@@ -514,7 +521,7 @@ nav {
       margin-bottom: 14px;
 
       @include mobile {
-        margin-top: 0px;
+        margin-top: -4px;
         text-align: justify;
       }
 
