@@ -101,10 +101,17 @@ exclude:
 collections:
   mpc-service:
     output: true
+  das-adhs:
+    output: true
 
 defaults:
   - scope:
       path: ""
       type: mpc-service
+    values:
+      layout: gallery-photo
+  - scope:
+      path: ""
+      type: das-adhs
     values:
       layout: gallery-photo
