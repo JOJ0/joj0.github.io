@@ -103,6 +103,8 @@ collections:
     output: true
   das-adhs:
     output: true
+  das-adhs-7-seg:
+    output: true
 
 defaults:
   - scope:
@@ -113,5 +115,10 @@ defaults:
   - scope:
       path: ""
       type: das-adhs
+    values:
+      layout: gallery-photo
+  - scope:
+      path: ""
+      type: das-adhs-7-seg
     values:
       layout: gallery-photo
