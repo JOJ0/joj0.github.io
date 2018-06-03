@@ -485,6 +485,7 @@ nav {
   div.postlist-pic {
     float:left;
     margin-right:7px;
+    margin-top:2px; // aligns text/pic
   }
 
   img.postlist {
@@ -525,7 +526,8 @@ nav {
 
     p {
       //margin-top: 6px; // value before adding pics to index
-      margin-top: -2px;
+      //margin-top: -2px; // works in Chrome, but not in Safari
+      margin-top: 0px; // works in both browsers, fix text/pic alignm. in class img.postlist  
       margin-bottom: 14px;
 
       @include mobile {
