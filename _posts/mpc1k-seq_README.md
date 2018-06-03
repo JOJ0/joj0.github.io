@@ -367,7 +367,7 @@ and this would be the second half:  "80_8bar"
 ** --replace simply replaces PunkBG with REPLACETERM.
 ** --correct-wav (-w) puts this files basename at found terms position,
 **     it would replace "PunkBG_0" with "PunkBG_0",
-**     and    "80_8bar" with "80_8bar".
+**     and              "80_8bar" with "80_8bar".
 ** --correct-wav-bpm (-p) just replaces the bpm part in the found term,
 ?? didn't find a possible bpm value in given term (PunkBG),
 ?? use underscores or dashes as seperating characters!
@@ -388,7 +388,7 @@ and this would be the second half:  "90_8bar"
 ** --replace simply replaces PunkBG with REPLACETERM.
 ** --correct-wav (-w) puts this files basename at found terms position,
 **     it would replace "PunkBG_0" with "PunkBG_0",
-**     and    "90_8bar" with "90_8bar".
+**     and              "90_8bar" with "90_8bar".
 ** --correct-wav-bpm (-p) just replaces the bpm part in the found term,
 ?? didn't find a possible bpm value in given term (PunkBG),
 ?? use underscores or dashes as seperating characters!
@@ -409,7 +409,7 @@ and this would be the second half:  "00_8bar"
 ** --replace simply replaces PunkBG with REPLACETERM.
 ** --correct-wav (-w) puts this files basename at found terms position,
 **     it would replace "PunkBG_1" with "PunkBG_1",
-**     and    "00_8bar" with "00_8bar".
+**     and              "00_8bar" with "00_8bar".
 ** --correct-wav-bpm (-p) just replaces the bpm part in the found term,
 ?? didn't find a possible bpm value in given term (PunkBG),
 ?? use underscores or dashes as seperating characters!
