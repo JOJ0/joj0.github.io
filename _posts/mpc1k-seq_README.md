@@ -4,7 +4,40 @@ Creating all the sequences on the MPC itself is a very tedious task, that's why 
 
 Though I wrote it for sequence files created from the MPC 1000 running JJOS, I assume the tool would work with the MPC 2500's files as well, I think they share the same format. Maybe also the one's from the MPC 500 would work, not sure about that. I'd certainly appreciate any testing and feedback about usage with those MPC models files.
 
-The utility is written in Python and was tested with version 2.7.10, it comes as a UNIX-style command line utility and as such shows all it's capabilities when being run with the typical --help or -h options:
+## Setup instructions
+
+Check your Python version with ```python --version```
+
+### Mac
+
+Mac OS X 10.11 "El Capitan" ships with Python 2.7.6 pre-installed, which is the version the utility was developed on and is tested with. OX X 10.8 had Python 2.6, which probably also would work. 10.9 and newer all have 2.7.x, which should be fine.
+
+If you don't have above, install the latest 2.7 package from [here](https://www.python.org/downloads/release/python-2715/) or use [homebrew](https://brew.sh) to get it.
+
+### Linux
+
+Most modern Linux Distributions already use Python 3.x by default, you would have to install a python2 package
+
+Debian based systems
+```
+apt install python2.7
+```
+
+Redhat based
+```
+yum install python27
+```
+
+Set the first line of the script to use this python version (eg ```#!/usr/bin/python2.7```)
+
+### Windows
+
+Download an msi installer [here](https://www.python.org/downloads/release/python-2715/)
+
+
+## How to use it
+
+The utility comes as a UNIX-style command line utility and as such shows all it's capabilities when being run with the typical --help or -h options:
 
 ```
 seq.py -h
@@ -41,7 +74,7 @@ optional arguments:
                         information
 ```
 
-## Simple usage examples
+### Simple usage examples
 
 just show meta information of all seq files in current directory
 ```
@@ -68,7 +101,7 @@ seq.py -b "64 512" -x -s "FunkBG" -r "Blues01" .
 ```
 
 
-## A more detailed usage example
+### A more detailed usage example
 
 Show all .SEQ files in the current directory (```.```) that have 80 in the filename (```-b "80"``` or ```--filter "80"``` and search for the term ```"FunkBG"``` in the file
 
@@ -122,7 +155,7 @@ Next are our possibilities to replace that string:
 
 Each of the options exactely state what they would replace, so if we are happy with one of them we just rerun the script and additionally add the replace option to the command line.
 
-For example if we chose -r to be the option to use, because we want to simply replace "FunkBG" with "PunkBG", this would be the command and its resulting output:
+For example if we chose ```-r``` to be the option to use, because we want to simply replace "FunkBG" with "PunkBG", this would be the command and its resulting output:
 
 ```
 seq.py -b "80" -s FunkBG -r "PunkBG" .
@@ -284,7 +317,7 @@ If we closely examine the output for the 3 files we'd find these useful possibil
   * ```--correct-bpm (-c)``` could correct the BPM of the sequence in files 2 and 3 (the copies)
   * ```--correct-wav (-w)``` could replace the name of the AUDIO tracks wav file so it's equal to the seq files name. Also in files 2 and 3 (the copies)
 
-If we would now use options -w and -c option we are getting the following output:
+If we would now use options ```-w``` and ```-c``` option we are getting the following output:
 
 ```
 seq.py --filter Punk -s "PunkBG" -w -c
