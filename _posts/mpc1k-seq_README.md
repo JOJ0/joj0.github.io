@@ -54,7 +54,7 @@ install the tool by adding the extracted directory to the system %path% variable
 
 or just quick and dirty copy it to a path that already is in the systems search path
 
-```cp seq.py c:\windows\system32\```
+```copy seq.py c:\windows\system32\```
 
 
 ## How to use it
