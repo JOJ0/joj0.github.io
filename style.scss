@@ -198,6 +198,11 @@ div.date {
     //display: inline-block;
     //margin-left: auto;
     //margin-right: auto;
+    img { // standalone pics should have the same margin and border as gallery pics
+        margin: 0px;
+        border: 5px solid $rosa;
+    }
+
 }
 
 .sidebyflex{
@@ -208,6 +213,7 @@ div.date {
 // ### youtube picture embedding ##
 div.outer_ytcontainer {
     margin-bottom: 6px;
+    border: 5px solid $rosa; // same border as images
 }
 
 div.ytcontainer {
