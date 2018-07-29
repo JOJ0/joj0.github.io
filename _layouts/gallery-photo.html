@@ -18,12 +18,17 @@ layout: default
   {% endif %}
   {% assign prev = links %}
 {% endfor %}
+<div class="clearfix">
+</div>
+
 <div class="post">
   <h1 style="text-align: center;">{{ page.title }}</h1>
 
     <div class="gallery-photo-figure">
       <figure>
-        <img class="gallery-photo-zoom" src="{{ page.image-path }}" alt="{{ page.image-path }}" />
+        <div style="margin:0px; padding:0px">
+          <img class="gallery-photo-zoom" src="{{ page.image-path }}" alt="{{ page.image-path }}" />
+        </div>
         {% if prevurl %}
         <div class="gallery-photo-nav" style="float:left; margin-left:0px;">
           <a href="{{prevurl}}">prev</a>
