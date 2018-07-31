@@ -63,27 +63,35 @@ Hence I decided to use MidiPipe's "AppleScript Trigger" module and manipulate th
   * send CC message to output
   * now that the volume is set, send note to output too
 
-I couldn't find a way to code this all into one AppleScript so my solution looks like this. The right half of MidiPipe's window shows the modules the messages are flowing through. You can see that I use two AppleScript Triggers and also two MIDI outs:<br>
-![MidiPipe0 ](/images/2017-8-29_volca-beats-velocity/MidiPipe0.png)
+I couldn't find a way to code this all into one AppleScript so my solution looks like this. The right half of MidiPipe's window shows the modules the messages are flowing through. You can see that I use two AppleScript Triggers and also two MIDI outs:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe0.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
 
-The settings of the modules in detail, obviously this is the input:<br>
-![MidiPipe1 ](/images/2017-8-29_volca-beats-velocity/MidiPipe1.png)<br>
+The settings of the modules in detail, obviously this is the input:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe1.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
 We only want to manipulate MIDI Note and Control Change messages. Leave the rest untouched:
-![MidiPipe2 ](/images/2017-8-29_volca-beats-velocity/MidiPipe2.png)
-The AList modules are for debugging, they show how the MIDI messages look like at the current point in the pipe:<br>
-![MidiPipe3 ](/images/2017-8-29_volca-beats-velocity/MidiPipe3.png)
-The first AppleScript Trigger translates the Note messages to MIDI CC messages (full code is below pics):<br>
-![MidiPipe4 ](/images/2017-8-29_volca-beats-velocity/MidiPipe4.png)
-Another Alist:<br>
-![MidiPipe5 ](/images/2017-8-29_volca-beats-velocity/MidiPipe5.png)
-MIDI CC messages are sent to Midi Out port as well as passed through to the next module:<br>
-![MidiPipe6 ](/images/2017-8-29_volca-beats-velocity/MidiPipe6.png)
-The second AppleScript Trigger translates the MIDI CC messages back to Note messages and sets their velocity correspondingly:<br>
-![MidiPipe7 ](/images/2017-8-29_volca-beats-velocity/MidiPipe7.png)
-Another Alist, here we should see a MIDI CC message followed by a MIDI Note for each drum triggered:<br>
-![MidiPipe8 ](/images/2017-8-29_volca-beats-velocity/MidiPipe8.png)
-And finally everything is sent out to the same MIDI port as above:<br>
-![MidiPipe9 ](/images/2017-8-29_volca-beats-velocity/MidiPipe9.png)
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe2.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+The AList modules are for debugging, they show how the MIDI messages look like at the current point in the pipe:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe3.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+The first AppleScript Trigger translates the Note messages to MIDI CC messages (full code is below pics):
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe4.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+Another Alist:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe5.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+MIDI CC messages are sent to Midi Out port as well as passed through to the next module:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe6.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+The second AppleScript Trigger translates the MIDI CC messages back to Note messages and sets their velocity correspondingly:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe7.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+Another Alist, here we should see a MIDI CC message followed by a MIDI Note for each drum triggered:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe8.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
+
+And finally everything is sent out to the same MIDI port as above:
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/MidiPipe9.png' alt_text='' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
 
 This is the first AppleScript:
 
