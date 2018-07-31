@@ -210,12 +210,18 @@ div.date {
     justify-content: left;
 }
 
-p {
-    img { //  same border as gallery pics for standalone pics (from markdown)
+p { //  same border as gallery pics for standalone pics (markdown -> inside p)
+    img {
         border: 5px solid $rosa;
     }
 }
 
+a { // no colored border for picture links (from markdown)
+    img {
+        //border: 5px solid $rosa;
+        border: 0px;
+    }
+}
 // ### youtube picture embedding ##
 div.outer_ytcontainer {
     margin-bottom: 6px;
