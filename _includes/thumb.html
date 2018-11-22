@@ -1,4 +1,4 @@
-<figure class="sidebyside" style="width: {{ include.width }}; float: {{include.float}}; margin: {{include.margin}};">
+<figure class="sidebyside" style="width: {{ include.width }}; float: {{include.float}}; margin: {{include.margin}}; clear:{{include.clear}}; {{include.misc_style}}">
   <a href="{{ include.filename }}">
     <img src="{{ include.filename }}" alt="{{ include.alt_text }}"/>
     {{% include photo.html }}
