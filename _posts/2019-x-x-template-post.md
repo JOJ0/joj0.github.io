@@ -15,6 +15,9 @@ anchor to chump back to from thumbs and image galleries is here:
 
 <a name="chapter_1"></a>
 
+
+
+
 two thumbs included here:
 
 <div class="clearfix">
@@ -22,6 +25,27 @@ two thumbs included here:
 {% include thumb.html filename='/images/2017-9-24-das-adhs/IMG_5310.jpg' alt_text='' caption='apostroph example wasn&#34;t' width="49%" float="right" %}
 </div>
 <br>
+
+
+
+
+3 pics in a row template here:
+
+<div class="pic_row_3">
+  <div class="pic_left">
+    {% include thumb.html filename='/images/2018-11-17-midictrl1/matrixmidi-xx.jpg' caption='' %}
+  </div>
+  <div class="pic_middle">
+    {% include thumb.html filename='/images/2018-11-17-midictrl1/matrixmidi-xx.jpg' caption='' %}
+  </div>
+  <div class="pic_right">
+    {% include thumb.html filename='/images/2018-11-17-midictrl1/matrixmidi-xx.jpg' caption='' %}
+  </div>
+</div>
+
+
+
+
 
 youtube video here:
 
