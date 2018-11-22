@@ -205,10 +205,39 @@ div.date {
 
 }
 
-.sidebyflex{
+.sidebyflex{ // currently unused I think
     display: flex;
     justify-content: left;
 }
+
+// TABLE pics view - 3 pics in a row
+// the outer div around it, aka the ROW box, use together with .sidebyside
+
+div.pic_row_3 {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+    margin-top: 20px; // overwrite in local style tag if needed
+    margin-bottom:20px; // overwrite in local style tag if needed
+    div.pic_left {
+        float: left;
+        width: 33.33%;
+        padding-right: 10px;
+    }
+    div.pic_middle {
+        float: left;
+        width: 33.33%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    div.pic_right {
+        float: left;
+        width: 33.33%;
+        padding-left: 10px;
+    }
+}
+
 
 p { //  same border as gallery pics for standalone pics (markdown -> inside p)
     img {
