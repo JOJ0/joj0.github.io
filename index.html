@@ -33,7 +33,7 @@ layout: default
           {% if post.published == nil %}
             Published: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
           {% else %}
-            - Built/coded/done: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+            - Built/coded/done: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
           {% endif %}
         </div>
 
