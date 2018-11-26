@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Template Blog Post
+title: The Charging Tape
 comments: true
-published: 2019-01-01
-image: /images/2018-11-3-the-charging-tape/IMG_5209.jpg
+published: 2018-12-14
+image: /images/2018-11-3-the-charging-tape/IMG_5209-th.jpg
 draft: true
 ---
 
-Alright, let's do something boring: We are building a batter charger. So, why would you do that? I dont't have any idea why you would do that, I can just tell you why _I_ _had_ to do it:
+Alright, let's do something boring: We are building a batter charger. So, why would you do that? I dont't have any idea why _you would do that_, I can just tell you why _I had to do it_ ;-)
 
 Last year I built a couple of micro-accu-battery-packs which are featured in this post [link 1](https://www.musikding.de/20-Pin-inline-socket)<br> obviously the came without a charger. After trying to load them with a crappy old charger I found in my stash, I learned how NIMH batteries actually look from the inside the hard way:
 
