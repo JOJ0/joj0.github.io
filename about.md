@@ -12,4 +12,4 @@ Find me on various other platforms:
 
 ### Contact me
 
-Best you use the contact forms in my blog posts.
+Best you use the comment forms in my blog posts.
