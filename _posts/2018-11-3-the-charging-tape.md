@@ -9,16 +9,16 @@ draft: true
 
 Alright, let's do something boring: Building a battery charger. So why would you do that? I dont't have any idea, just go buy one! ;-) But apparently I had a reason to build one myself:
 
-Some time ago I built a couple of rechargeable micro-battery-packs which are featured in [this post]({% post_url 2017-7-6-das-adhs %})<br>After trying to load one of them with an old NiCd fast-charger I learned the hard way how my batteries actually look from the inside:
+Some time ago I built a couple of rechargeable micro-battery-packs which are featured in [this post]({% post_url 2017-7-6-das-adhs %})<br>After trying to recharge one of them with an old NiCd fast-charger I learned the hard way how my batteries actually look from the inside:
 
 pics explosion
 
 Don't try this at home kids! 
 
-So far so good, fortunately I didn't burn my flat so I decided that I have to either buy or build a charger that is designed to charge 
-Nickel-Metal-Hybrid (NiMh) batteries with very little cappacity (measured in mAh - milliamphours FIXME)
+So far so good, I didn't burn my flat yet, so I decided to either buy or build a charger that is designed to charge 
+Nickel-Metal Hybride (NiMH) batteries with very little capacity (measured in mAh - milliamphours FIXME)
 
-### What you always wanted to know about batteries
+### What you always wanted to know about rechargeable batteries
 
 First off, my tiny knobcell (FIXME) accus have the following specs:
 
@@ -30,29 +30,72 @@ In short: They are ordinary rechargeable batteries and it actually should be sav
 
 So why did my test-candidate explode then?
 
-It was simply overcharged. NiMh cells are designed to be only fast-charged until they reach their full capacity. After that, keeping them connected to high current results in a lot of heat and...you saw the pics.
+It was simply overcharged. NiMH cells are designed to be only fast-charged until they reach their full capacity. After that, keeping them connected to high current results in a lot of heat and...you saw the pics.
 
-So either the charger has thermal sensors to shut off before overheating or it just uses low current the cell can stand for a longer time duration.
+So either the charger has thermal sensors to shut off before overheating or it just uses low current the cell can withstand for a longer (infinite) time duration.
 
 Sensoring seemed difficult so I decided to build a low current charger.
 
-A safe current is 1/10 of its capacity (1/10 C). In my batteries case this would be 1/10*80=8mA. There you have it, no affordable charger on the market seems to handle such a low current. Typically chargers go as low as 150mA, which is fine for typical batteries which have a capacity of 1500mAh to 2500mAh (or even more), but not for my tiny 80mAh cells.
+A safe current for NiMH cells is 1/10 of their capacity (1/10 C) or even less. In my batteries case this would be 1/10*80=8mA. There you have it, no affordable charger on the market seems to handle such a low current. Typically chargers go as low as 150mA, which is fine for typical batteries which have a capacity of 1500mAh to 2500mAh (or even more), but not for my tiny 80mAh cells.
 
-### Finding and customizing a design
+### Finding and customizing a circuit design
 <a name="finding"></a>
 
-Some googling and studying charger designs brought up this forum thread. The schematic suggested by member Sgt.fixme seemed to be a perfect fit: link fixme
+Some googling and studying charger designs brought up [this forum thread](https://forum.allaboutcircuits.com/threads/constant-nimh-trickle-charger.14624/). The schematic suggested by member Sgt.fixme seemed to be a perfect fit:
 
-It features two regulators ICs: One limiting the current and the other one the voltage.
+original circuit pic here
 
-* Vc should be set slightly higher than the voltage of the fully charged battery pack. My two-cell packs got 2*1,35=2,7V so around 3 Volts should be fine.
-* Ic (charging current) as already discussed above, not more than 8mA
+It features two regulators ICs (TLV1117C): One limiting the current (U1) and the other one the voltage (U2). The battery(pack) is represented by capacitor C2 (he uses the similar behaviour of the capacitor for the software simulation)
+
+* charging voltage (measure between point A and ground) should be set slightly higher than the voltage of the fully charged battery pack. My two-cell packs have about 2*1,35=2,7V so around 2,8-2,9V should be fine.
+* charging current (open circuit between points A and B and connect multimeter in between for measuring) as already discussed above, not more than 8mA
 
 I decided to use LM317 ICs. They are common and easy to get.
 
-Fortunately the design already handles V for two-cell packs and it can be fine tuned using the trim-pot. 
+Fortunately the design already handles V for two-cell packs and it can be fine tuned using the trim-pot R5.
 
-I is set by resistor Ri fixme (He uses 2 identical resistors in parallel to split the current and not have to use an R that can stand higher power (more Watts), I will use just one R as my current is very little).
+Charging current is set by resistors R1,R2.
+(On first sight it is slightly confusing that he uses 2 identical resistors in parallel. I suppose he did this to split the current and not have to use an R that can stand higher power (more Watts), I will use just one R as my current is very little compared to the 260mA in the original design. Let’s just call my resistor R1 and forget about R2.)
+
+If you have a look on page fixme in the [LM317 datasheet](fixme link) you will find examples for current and voltage limiting circuits that look almost identical to Sgt.fixmes design. His circuit is basically “just” a combination of two examples. Well done!
+
+This is my customized version
+
+custom circuit pics here
+
+
+#### Some theory for the geeks
+
+Skip this if it’s boring ;-) I’ll try to explain why in my case R2 surely is not necessary.
+
+##### Original design
+
+Assuming R2 is missing:
+
+The formula for calculating the power consumption of a device (eg. a resistor) is
+
+P = V * I
+
+The V on R1 is unknown so just calculate it using Ohm’s law:
+
+V = R * I = 10 Ohm * 260 mA = 10 * 0,26 = 2,6 V
+
+Now find out how much power R1 has to withstand:
+
+P = V * I = 2,6 * 0,26 = 0,676 W (Watts)
+
+The most common resistors support max power levels of 0,3 to 0,5 Watts. With splitting the current in half by using a second resistor R2 in parallel with R1, also the power consumption is halfed to 0,338 W for each R.
+
+##### Customized design
+
+V = R * I = 120 Ohm * 8 mA = 120 * 0,008 = 0,96 V
+
+P = V * I = 0,96 * 0,008 = 0,00768 W = 7,7 mW
+
+7,7 milli Watts is nothing and also the smallest resistor form factor can withstand this. No need for splitting the current in half with a second R.
+
+
+
 
 
 
