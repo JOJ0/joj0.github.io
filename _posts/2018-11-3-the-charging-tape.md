@@ -23,7 +23,7 @@ Nickel-Metal Hybride (NiMH) batteries with very little capacity (measured in mAh
 First off, my tiny knobcell (FIXME) accus have the following specs:
 
   * 1,2 V (exactely the same as normal AA, AAA, etc. rechargable batteries;
-    this value is nominal, in reality most accus have a little more, something like 1,3 to 1,45 when fully charged) 
+    this value is nominal, in reality most of them have a little more, something like 1,3 to 1,45 when fully charged) 
   * 80mAh capacity
 
 In short: They are ordinary rechargeable batteries and it actually should be save to load them with an ordinary charger.
@@ -32,11 +32,11 @@ So why did my test-candidate explode then?
 
 It was simply overcharged. NiMH cells are designed to be only fast-charged until they reach their full capacity. After that, keeping them connected to high current results in a lot of heat and...you saw the pics.
 
-So either the charger has thermal sensors to shut off before overheating or it just uses low current the cell can withstand for a longer (infinite) time duration.
+So either the charger has thermal sensors to shut off before overheating, or it just uses a low current the cell can withstand for a longer (infinite) time duration.
 
-Sensoring seemed difficult so I decided to build a low current charger.
+Sensoring seemed tedious so I decided to build a low current charger.
 
-A safe current for NiMH cells is 1/10 of their capacity (1/10 C) or even less. In my batteries case this would be 1/10*80=8mA. There you have it, no affordable charger on the market seems to handle such a low current. Typically chargers go as low as 150mA, which is fine for typical batteries which have a capacity of 1500mAh to 2500mAh (or even more), but not for my tiny 80mAh cells.
+A safe current for NiMH cells is 1/10 of their capacity (1/10 C) or even less. In my batteries case this would be 1/10*80=8mA. There you have it: No affordable charger on the market seems to handle such a low current. Typically chargers go as low as 150mA, which is fine for typical batteries which have a capacity of 1500mAh to 2500mAh (or even more), but not for my tiny 80mAh cells.
 
 ### Finding and customizing a circuit design
 <a name="finding"></a>
@@ -45,21 +45,20 @@ Some googling and studying charger designs brought up [this forum thread](https:
 
 original circuit pic here
 
-It features two regulators ICs (TLV1117C): One limiting the current (U1) and the other one the voltage (U2). The battery(pack) is represented by capacitor C2 (he uses the similar behaviour of the capacitor for the software simulation)
+It features two regulator ICs (TLV1117C): One limiting the current (U1) and the other one the voltage (U2). The battery(pack) is represented by capacitor C2 (he uses the similar-to-battery-behaviour of the capacitor for the software simulation). I substituted the two regulators with the more common and easy to get LM317 type.
 
-* charging voltage (measure between point A and ground) should be set slightly higher than the voltage of the fully charged battery pack. My two-cell packs have about 2*1,35=2,7V so around 2,8-2,9V should be fine.
-* charging current (open circuit between points A and B and connect multimeter in between for measuring) as already discussed above, not more than 8mA
 
-I decided to use LM317 ICs. They are common and easy to get.
+* Charging voltage should be set slightly higher than the voltage of the fully charged battery pack. My two-cell packs have about 2*1,35=2,7V so around 2,8-2,9V should be fine.
+  * Fortunately the design already handles charging voltage for two-cell packs. It can be fine tuned using the trim-pot R5.
+  * measure between point A and ground
 
-Fortunately the design already handles V for two-cell packs and it can be fine tuned using the trim-pot R5.
-
-Charging current is set by resistors R1,R2.
-(On first sight it is slightly confusing that he uses 2 identical resistors in parallel. I suppose he did this to split the current and not have to use an R that can stand higher power (more Watts), I will use just one R as my current is very little compared to the 260mA in the original design. Let’s just call my resistor R1 and forget about R2.)
+* Charging current as discussed above, not more than 8mA
+  * It is set by resistors R1,R2 (On first sight it is slightly confusing that he uses 2 identical resistors in parallel. I suppose he did this to split the current and spare the use of an R with higher power specs (more Watts - more expensive - not as common in ones components stash), I will use just one R as my current is very little compared to the 260mA in the original design. Let’s just call my resistor R1 and forget about R2.).
+  *  open circuit between points A and B and connect multimeter in between for measuring
 
 If you have a look on page fixme in the [LM317 datasheet](fixme link) you will find examples for current and voltage limiting circuits that look almost identical to Sgt.fixmes design. His circuit is basically “just” a combination of two examples. Well done!
 
-This is my customized version
+This is my final customized version
 
 custom circuit pics here
 
@@ -92,7 +91,7 @@ V = R * I = 120 Ohm * 8 mA = 120 * 0,008 = 0,96 V
 
 P = V * I = 0,96 * 0,008 = 0,00768 W = 7,7 mW
 
-7,7 milli Watts is nothing and also the smallest resistor form factor can withstand this. No need for splitting the current in half with a second R.
+7,7 milli Watts is almost nothing and also the smallest resistor form factor would withstand it. No need for splitting the current in half with a second R.
 
 
 
