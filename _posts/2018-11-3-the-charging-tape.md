@@ -111,6 +111,7 @@ time = 0,112 / 0,006 = 18,66 h
 So let’s call it a night and something. It should be safe to leave the charger connected for a couple of days.
 
 
+<!--
 
 two thumbs included here:
 
@@ -147,3 +148,4 @@ blabla getting stuff
 
 [link 1](https://www.musikding.de/20-Pin-inline-socket)<br>
 [link 2](https://www.musikding.de/10-Pin-strip)<br>
+-->
