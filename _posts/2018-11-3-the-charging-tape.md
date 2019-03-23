@@ -2,7 +2,7 @@
 layout: post
 title: The Charging Tape
 comments: true
-published: 2018-12-14
+published: 2019-03-25
 image: /images/2018-11-3-the-charging-tape/IMG_5209-th.jpg
 draft: true
 ---
@@ -15,8 +15,8 @@ pics explosion
 
 Don't try this at home kids! 
 
-So far so good, I didn't burn my flat yet, so I decided to either buy or build a charger that is designed to charge 
-Nickel-Metal Hybride (NiMH) batteries with very little capacity.
+So far so good, I didn't burn my flat yet, so I decided to either buy or build a charger that is designed to charge Nickel-Metal Hybride (NiMH) batteries with very little capacity.
+
 
 ### What you always wanted to know about rechargeable batteries
 
@@ -37,6 +37,7 @@ So either the charger has thermal sensors to shut off before overheating, or it 
 Sensoring seemed tedious so I decided to build a low current charger.
 
 A safe current for NiMH cells is 1/10 of their capacity (1/10 C) or even less. In my batteries case this would be 1/10 * 80 = 8mA. There you have it: No affordable charger on the market seems to handle such a low current. Typically chargers go as low as 150 mA, which is fine for typical batteries which have a capacity of 1500 mAh to 2500 mAh (or even more), but not for my tiny 80 mAh cells.
+
 
 ### Finding and customizing a circuit design
 <a name="finding"></a>
@@ -67,6 +68,7 @@ custom circuit pics here
 
 Skip this if it’s boring ;-) I’ll try to explain why in my case R2 surely is not necessary.
 
+
 ##### R1 power consumption - Original design 
 
 Assuming R2 is missing:
@@ -85,6 +87,7 @@ P = V * I = 2,6 * 0,26 = 0,676 W (Watts)
 
 The most common resistors support max power levels of 0,3 to 0,5 Watts. With splitting the current in half by using a second resistor R2 in parallel with R1, also the power consumption is halfed to 0,338 W for each R.
 
+
 ##### R1 power consumption - Customized design
 
 V = R * I = 120 Ohm * 6 mA = 120 * 0,006 = 0,72 V
@@ -92,6 +95,7 @@ V = R * I = 120 Ohm * 6 mA = 120 * 0,006 = 0,72 V
 P = V * I = 0,72 * 0,006 = 0,00432 W = 4,3 mW
 
 4,3 milliwatts is almost nothing and every resistor form factor I know of would withstand it. No need for splitting the current in half with a second R.
+
 
 ##### How long does it take to load then?
 
@@ -135,6 +139,7 @@ photogallery here (collection has to be createdi first):
     {% endfor %}
   </ul>
 </div>
+
 
 ### Materials
 
