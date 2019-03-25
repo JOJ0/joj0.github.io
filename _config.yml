@@ -105,6 +105,8 @@ collections:
     output: true
   midictrl1:
     output: true
+  charger-tape:
+    output: true
 
 defaults:
   - scope:
@@ -120,5 +122,10 @@ defaults:
   - scope:
       path: ""
       type: midictrl1
+    values:
+      layout: gallery-photo
+  - scope:
+      path: ""
+      type: charger-tape
     values:
       layout: gallery-photo
