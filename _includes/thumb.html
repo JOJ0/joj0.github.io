@@ -3,7 +3,7 @@
 <figure class="sidebyside" style="width: {{ include.width }}; float: {{include.float}}; margin: {{include.margin}}; clear:{{include.clear}}; {{include.misc_style}}">
   <a href="{{ include.filename }}">
       {% if page.collection %}
-      <img src="{{ include.filename | remove: '.jpg' | append: '-th' | append: '.jpg'}}"
+      <img src="{{ include.filename | replace: '.jpg','-th.jpg' | replace: '.png','-th.png' }}"
         alt="{{ include.alt_text }}"/>
       {% else %}
       <img src="{{ include.filename }}" 
