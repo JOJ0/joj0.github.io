@@ -56,7 +56,7 @@ A safe current for NiMH cells is 1/10 of their capacity (1/10 C) or even less. I
 Some googling and studying charger designs brought up [this forum thread](https://forum.allaboutcircuits.com/threads/constant-nimh-trickle-charger.14624/). The schematic suggested by member SgtWookie seemed to be a perfect fit:
 
 <div class="clearfix">
-{% include figure.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-01.jpg' alt_text='' caption='' width="100%" float="left" %}
+{% include thumb.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-01.jpg' alt_text='' caption='' width="100%" float="left" thumb="off" %}
 </div>
 
 
@@ -73,10 +73,10 @@ It features two regulator ICs (TLV1117C): One limiting the current (U1) and the 
 
 If you have a look on pages 12 and 13 in the [LM317 datasheet](http://www.ti.com/lit/ds/symlink/lm317.pdf) you will find examples for current and voltage limiting circuits that look almost identical to SgtWookies design. His circuit is basically a combination of two examples. Well done!
 
-This is my final customized version. The 120k resistor limits charging current to 6mA, being even more healthy for my batteries:
+This is my final customized version. The 120k resistor R1 configures LM317_1 to limit charging current to 6mA, being even more healthy for my batteries than the discussed 8mA:
 
 <div class="clearfix">
-{% include figure.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-01.jpg' alt_text='' caption='' width="100%" float="left" %}
+{% include thumb.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-02.jpg' alt_text='' caption='' width="100%" float="left" thumb="off" %}
 </div>
 
 ### Some theory for the geeks
