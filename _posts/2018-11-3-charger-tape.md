@@ -2,9 +2,9 @@
 layout: post
 title: The Charger Tape
 comments: true
-published: 2019-03-25
-image: /images/2018-11-3-charger-tape/ChrgTpCase-24-th.jpg
-permalink: /charger-tape
+published: 2019-03-26
+image: /images/2018-11-3-charger-tape/ChrgTpCase-22-th.jpg
+#permalink: /charger-tape
 draft: true
 ---
 
@@ -56,7 +56,7 @@ A safe current for NiMH cells is 1/10 of their capacity (1/10 C) or even less. I
 Some googling and studying charger designs brought up [this forum thread](https://forum.allaboutcircuits.com/threads/constant-nimh-trickle-charger.14624/). The schematic suggested by member SgtWookie seemed to be a perfect fit:
 
 <div class="clearfix">
-{% include thumb.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-01.jpg' alt_text='' caption='' width="100%" float="left" thumb="off" %}
+{% include thumb.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-01.jpg' alt_text='' caption='' width="100%" float="left"%}
 </div>
 
 
@@ -76,7 +76,7 @@ If you have a look on pages 12 and 13 in the [LM317 datasheet](http://www.ti.com
 This is my final customized version. The 120k resistor R1 configures LM317_1 to limit charging current to 6mA, being even more healthy for my batteries than the discussed 8mA:
 
 <div class="clearfix">
-{% include thumb.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-02.jpg' alt_text='' caption='' width="100%" float="left" thumb="off" %}
+{% include thumb.html filename='/images/2018-11-3-charger-tape/ChrgTpSchem-02.png' alt_text='' caption='' width="100%" float="left" %}
 </div>
 
 ### Some theory for the geeks
@@ -165,6 +165,6 @@ These are some combination packs with headers and sockets that fit together. It'
 [60 pieces pin headers and sockets pack](https://www.amazon.de/gp/product/B01MDRPUFU/ref=as_li_tl?ie=UTF8&tag=j0j0sblog-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B01MDRPUFU&linkId=663f34d1fe525181873e33ab18d75570)<br>
 [40 pieces pin headers and sockets pack](https://www.amazon.de/gp/product/B078SQ1CZF/ref=as_li_tl?ie=UTF8&tag=j0j0sblog-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=B078SQ1CZF&linkId=d296266c2f48d9a38d224eaa07455123)<br>
 
-For resistor buy anything, anywhere. I like [Metal Film types](https://www.musikding.de/Metal-Film-06W), they are quite cheap but can stand about 0,6 Watts, which is a little more than the most common ones with 0,25 Watts (I think they are called carbon-layer). You won't need a lot of power in your resistors for this project but it's good to have some in the stash.
+For resistors buy anything, anywhere. I like [Metal Film types](https://www.musikding.de/Metal-Film-06W), they are quite cheap but can stand about 0,6 Watts, which is a little more than the most common ones with 0,25 Watts (I think they are called carbon-layer). You won't need higher power resistors for this project but it's good to have some in the stash.
 
-
+The power supply can be almost anything you have lying around. It should deliver a minimum of 6V, I think the LM317 needs this, maybe it works with a 5V one. The absolute maximum input voltage for this IC is up to 30V, so you have a wide range of choices between these values.
