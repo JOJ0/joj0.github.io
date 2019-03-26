@@ -5,7 +5,7 @@ comments: true
 published: 2019-03-26
 image: /images/2018-11-3-charger-tape/ChrgTpCase-22-th.jpg
 #permalink: /charger-tape
-draft: true
+draft: false
 ---
 
 Alright, let's do something boring: Building a battery charger. So why would you do that? I dont't have any idea, just go buy one! ;-) But apparently I had a reason to build one myself:
