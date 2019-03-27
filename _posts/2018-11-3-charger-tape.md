@@ -8,7 +8,7 @@ image: /images/2018-11-3-charger-tape/ChrgTpCase-22-th.jpg
 draft: false
 ---
 
-Alright, let's do something boring: Building a battery charger. So why would you do that? I dont't have any idea, just go buy one! ;-) But apparently I had a reason to build one myself:
+Alright, let's do something boring: Building a battery charger. So why would you do that? I don't have any idea, just go buy one! ;-) But apparently I had a reason to build one myself.
 
 Some time ago I built a couple of rechargeable button-cell-battery-packs which are featured in [this post]({% post_url 2017-9-24-das-adhs %}#building-7-segment)<br>After trying to recharge one of them with an old NiCd fast-charger I learned the hard way how my batteries actually look from the inside:
 
