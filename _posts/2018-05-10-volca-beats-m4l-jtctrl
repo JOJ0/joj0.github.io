@@ -1,75 +1,30 @@
 ---
 layout: post
-title: Template Blog Post
+title: Volca Beats JTCTRL
 comments: true
-published: 2019-01-01
-image: /images/2017-9-24-das-adhs/IMG_5209.jpg
+published: 2019-05-23
+image: /images/2018-5-10-volca-beats-m4l-jtctrl/Volca_Beats_JTCTRL_v0.8.3.png
 draft: true
 ---
 
-Intro blabla
+This is a quick one: I extended my Volca Beats Velocititzer with a couple of features.<br>
+Download the "Max for Live" device [here](http://www.maxforlive.com/library/device/5479/volca-beats-jtctrl)<br>
 
-<a name="chapter_1"></a>
-### Chapter 1
-
-
-
-two thumbs included here:
-
-<div class="clearfix">
-  {% include thumb.html filename='/images/2017-9-24-das-adhs/xx.jpg' alt_text='' caption='' width="49%" float="left" %}
-  {% include thumb.html filename='/images/2017-9-24-das-adhs/xx.jpg' alt_text='' caption='apostroph example wasn&#34;t' width="49%" float="right" %}
-</div>
-<br>
+![pic 3](/images/2018-5-10-volca-beats-m4l-jtctrl/Volca_Beats_JTCTRL_v0.8.3.png)
 
 
+This is an extended edition of my Volca Beats Velocitizer. (http://maxforlive.com/library/device/4624/volca-beats-velocitizer)
 
+* Everything that's MIDI-CC-controllable on the Beats can be controlled via the dial controls.
 
-3 pics in a row template here:
+* The "4x4" switch moves Agogo and Claves to MIDI notes inide the 4x4 grid of the first page of your MPC-style controller. No more switching to the next 16 pads!
 
-<div class="pic_row_3">
-  <div class="pic_left">
-    {% include thumb.html filename='/images/2018-11-17-midictrl1/matrixmidi-xx.jpg' caption='' %}
-  </div>
-  <div class="pic_middle">
-    {% include thumb.html filename='/images/2018-11-17-midictrl1/matrixmidi-xx.jpg' caption='' %}
-  </div>
-  <div class="pic_right">
-    {% include thumb.html filename='/images/2018-11-17-midictrl1/matrixmidi-xx.jpg' caption='' %}
-  </div>
-</div>
+* The "Send State" button sends, as you probably have already guessed, the current state (duh!), of all dials to your Beats - Thus you can save the settings of your machine together with your Ableton Live project!
 
+* The "Blocked" button is a weird one. It changes the "default loading behaviour" of Ableton Live projects containing M4L devices.
+    * Normally whenever you are loading a Live project, all contained M4L devices "bang" out their settings of their dials via MIDI - which means: Whenever you are loading a Live project, immediately your Volca Beats sounds different - I don't like this behaviour, so this M4L device prevents the data to be sent to the Volca Beats - it does not let MIDI CC's through as along as you _manually_ switch _off_ the "Blocked" button!
+    * So basicaly the user has to first unblock the device with this switch before it can be used!
 
+* And yes, certainly JTCTRL makes your Volca Beats velocity sensitive, when it's controlled via MIDI notes, exactely like the Velocitizer does.
 
-
-youtube video here:
-
-{% include youtube.html id="xxxxxx" width="100%" %}
-text under youtube video
-<br><br>
-
-
-
-
-photogallery here (collection has to be createdi first):
-
-<div class="photo-gallery-frame clearfix">
-  <ul class="photo-gallery-list">
-    {% for photo in site.the_collections_name %}
-    <li>
-      <a href="{{ photo.url | prepend: site.baseurl }}" name="{{ photo.title }}">
-        <img src="{{ photo.image-path|remove: ".jpg"| append: '-th'|append: ".jpg" }}" alt="{{ photo.caption }}" />
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
-
-
-### Supplies
-
-blabla getting stuff
-
-[link 1](https://www.musikding.de/20-Pin-inline-socket)<br>
-[link 2](https://www.musikding.de/10-Pin-strip)<br>
+The device is tried and tested, I am using it on each and every gig with my band ADHS - It's stable! I am up for feature requests!
