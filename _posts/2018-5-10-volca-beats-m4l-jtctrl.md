@@ -3,7 +3,7 @@ layout: post
 title: Volca Beats JTCTRL
 comments: true
 published: 2019-05-23
-image: /images/2018-5-10-volca-beats-m4l-jtctrl/Volca_Beats_JTCTRL_v0.8.3.png
+image: /images/2018-5-10-volca-beats-m4l-jtctrl/Volca_Beats_JTCTRL_v0.8.3_140.png
 draft: false
 ---
 
