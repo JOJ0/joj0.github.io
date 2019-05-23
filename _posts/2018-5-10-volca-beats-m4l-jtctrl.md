@@ -22,9 +22,11 @@ Download the "Max for Live" device [here](http://www.maxforlive.com/library/devi
 * The "Send State" button sends, as you probably have already guessed, the current state (duh!), of all dials to your Beats - Thus you can save the settings of your machine together with your Ableton Live project!
 
 * The "Blocked" button is a weird one: It changes the "default loading behaviour" of Ableton Live projects containing M4L devices.
-    * Normally whenever you are loading a Live project, all contained M4L devices "bang" out their settings of their dials via MIDI - which means: Whenever you are loading a Live project, immediately your Volca Beats sounds different - I don't like this behaviour, so this M4L device prevents the data to be sent to the Volca Beats - it does not let MIDI CC's through as along as you _manually_ _switch off_ the "Blocked" mode!
-    * So basicaly the user has to first unblock the device with this button before it can be used! (The text "Blocked" has to be _unlit_)
+    * Normally whenever you are loading a Live project, all contained M4L devices "bang" out their settings of their dials via MIDI - which means: immediately your Volca Beats sounds different - I don't like this behaviour, so this M4L device prevents the data to be sent to the Volca Beats - it does not let MIDI CC's through until you _manually_ _switch off_ the "Blocked" mode!
+    * So basicaly the user has to first unblock the device with this button before it can be used! (The text "Blocked" has to be _unlit_) - This has to be done each time you load a Live project containing the JTCTRL device!
 
-* And yes, certainly JTCTRL makes your Volca Beats velocity sensitive, as long as it's controlled via MIDI notes, exactely like the Velocitizer does.
+* And yes, certainly it makes your Volca Beats velocity sensitive, as long as it's controlled via MIDI notes, exactely like the Velocitizer does.
 
-The device was developed around Mar to May 2018, since then I am using it on each and every gig with my band ADHS - consider it stable! I am up for feature requests!
+The device was developed around Mar to May 2018, since then I've used it on each and every gig with my band ADHS - It's tried and tested well, consider it stable! :-)
+
+I am up for feature requests and suggestions!
