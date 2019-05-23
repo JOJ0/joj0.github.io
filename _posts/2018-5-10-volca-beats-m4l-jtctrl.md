@@ -7,15 +7,13 @@ image: /images/2018-5-10-volca-beats-m4l-jtctrl/Volca_Beats_JTCTRL_v0.8.3.png
 draft: true
 ---
 
-This is a quick one: I extended my Volca Beats Velocititzer with a couple of features.<br>
+This is a quick one: I extended my [Volca Beats Velocititzer]({% post_url 2018-3-11-volca-beats-m4l-velocity %}) with a couple of features.<br>
 Download the "Max for Live" device [here](http://www.maxforlive.com/library/device/5479/volca-beats-jtctrl)<br>
 
 ![JTCTRL screenshot](/images/2018-5-10-volca-beats-m4l-jtctrl/Volca_Beats_JTCTRL_v0.8.3.png)
 
 <a name="features"></a>
 ### Features
-
-This is an extended edition of my Volca Beats Velocitizer. (http://maxforlive.com/library/device/4624/volca-beats-velocitizer)
 
 * Everything that's MIDI-CC-controllable on the Beats can be controlled via the dial controls.
 
