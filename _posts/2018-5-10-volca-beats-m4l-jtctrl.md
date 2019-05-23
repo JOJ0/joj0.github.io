@@ -27,6 +27,6 @@ Download the "Max for Live" device [here](http://www.maxforlive.com/library/devi
 
 * And yes, certainly it makes your Volca Beats velocity sensitive, as long as it's controlled via MIDI notes, exactely like the Velocitizer does.
 
-The device was developed around Mar to May 2018, since then I've used it on each and every gig with my band ADHS - It's tried and tested well, consider it stable! :-)
+The device was developed around Mar to May 2018, since then I've used it on each and every gig with my band [ADHS](https://www.facebook.com/ADHSband/) - It's tried and tested well, consider it stable! :-)
 
 I am up for feature requests and suggestions!
