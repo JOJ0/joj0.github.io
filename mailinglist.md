@@ -39,7 +39,9 @@ This is the registration form for the jojotodos.net mailinglist. It keeps you up
 <li><input type="checkbox" value="8" name="group[4635][8]" id="mce-group[4635]-4635-3"><label for="mce-group[4635]-4635-3">New posts on blog.jojotodos.net</label></li>
 </ul>
 </div>
+{% comment %}
 <p><a href="https://us20.campaign-archive.com/home/?u=a36c553b19609b25cb72fd616&id=a9c8caa40d" title="View previous campaigns">View previous campaigns.</a></p>
+{% endcomment %}
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
