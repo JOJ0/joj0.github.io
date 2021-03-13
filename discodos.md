@@ -23,7 +23,7 @@ is based on data pulled from a users [Discogs](https://www.discogs.com) record [
 - [macOS Installer](https://github.com/JOJ0/discodos/releases/download/v1.0.0-rc4/DiscoDOS-1.0.0-rc4-macOS.dmg)
 - Linux - read the [Installation Guide](https://discodos.readthedocs.io/en/latest/INSTALLATION.html#linux)
 
-DiscoDOS guides you through its setup automatically on first run. For further assistance especially on accessing your personal Discogs record collection, read [this chapter](https://discodos.readthedocs.io/en/latest/INSTALLATION.html#configuree-discogs-api-access) of the Installation Guide.
+DiscoDOS guides you through its setup automatically on first run. For further assistance especially on accessing your personal Discogs record collection, read [this chapter](https://discodos.readthedocs.io/en/latest/INSTALLATION.html#configure-discogs-api-access) of the Installation Guide.
 
 
 ## Usage
