@@ -12,12 +12,12 @@ The mission: My friend Lena&#39;s Korg Monotron should become controllable via M
 <br>
 
 <div class="clearfix">
-{% include figure.html filename='/images/2017-09-10_adhs-tron/1.jpg' alt_text='pic 1' caption='Starting Point: Monotron, a Perfboard and an Arduino Uno' width="49%" float="left" %}
-{% include figure.html filename='/images/2017-09-10_adhs-tron/2.jpg' alt_text='pic 2' caption='Naked-Tron' width="49%" float="right" %}
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/1.jpg' alt_text='pic 1' caption='Starting Point: Monotron, a Perfboard and an Arduino Uno' width="49%" float="left" %}
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/2.jpg' alt_text='pic 2' caption='Naked-Tron' width="49%" float="right" %}
 </div>
 <br>
 
-![pic 3](/images/2017-09-10_adhs-tron/3.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/3.jpg' alt_text='pic 3' caption='' %}
 First goal reached: Arduino receives MIDI notes through a MIDI input circuit
 <br><br>
 
@@ -33,8 +33,8 @@ The code necessary for above functionality:
 At this point it's about time to tell you that the snippets you see on this page are reconstructed with the help of my git history and I can't guarantee that the program was completely working/bugfree at that particular commit. If you find something odd please leave a comment and I'm happy to help, correct it, whatever. On the bottom of this page you find a link to the final code that worked for me.
 <br><br>
 
-{% include figure.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
-{% include figure.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/4.jpg' alt_text='pic 4' caption='' width="49%" float="left" %}
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/4.5.jpg' alt_text='pic 4.5' caption='' width="49%" float="right" %}
 The solution to the Pitch Control Voltage problem with Arduino Uno: Microcontroller &#34;Teensy 3.2&#34;, equipped with a 12 bit DAC, precise enough to generate the needed voltages.
 <br><br>
 
@@ -54,11 +54,11 @@ whole ribbon Vbe offset<br>
 <br>
 
 
-![pic 5](/images/2017-09-10_adhs-tron/5.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/5.jpg' alt_text='pic 5' caption='' %}
 Added two new features: Filter cutoff controllable via MIDI CC or MIDI velocity, MIDI control can be switched off to keep original onboard filter control intact (see bottom of post for code)
 <br><br>
 
-![pic 6](/images/2017-09-10_adhs-tron/6.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/6.jpg' alt_text='pic 6' caption='' %}
 The first cardboard prototype of Tron&#34;s new housing.
 <br><br>
 
@@ -66,19 +66,19 @@ The first cardboard prototype of Tron&#34;s new housing.
 Filter controlled via MIDI CC (pink line), playing around with the resonance is always fun
 <br><br>
 
-![pic 7](/images/2017-09-10_adhs-tron/7.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/7.jpg' alt_text='pic 7' caption='' %}
 To fit everything in the case, all components on the breadboard (white) are to be soldered on a perfboard (brown). The original Monotron printed circuit board should sit right next to it.
 <br><br>
 
-![pic 8](/images/2017-09-10_adhs-tron/8.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/8.jpg' alt_text='pic 8' caption='' %}
 Designing and soldering the perfboard
 <br><br>
 
-![pic 9](/images/2017-09-10_adhs-tron/9.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/9.jpg' alt_text='pic 9' caption='' %}
 The almost finished perfboard
 <br><br>
 
-![pic 10](/images/2017-09-10_adhs-tron/10.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/10.jpg' alt_text='pic 10' caption='' %}
 Perfboard flipside
 <br><br>
 
@@ -93,31 +93,31 @@ additional features not shown here
 * LFO controlled via MIDI CC
 <br><br>
 
-![pic 11](/images/2017-09-10_adhs-tron/11.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/11.jpg' alt_text='pic 11' caption='' %}
 Happy outdoor hacking
 <br><br>
 
-![pic 12](/images/2017-09-10_adhs-tron/12.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/12.jpg' alt_text='pic 12' caption='' %}
 Designing the final layout of the control elements
 <br><br>
 
-![pic 13](/images/2017-09-10_adhs-tron/13.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/13.jpg' alt_text='pic 13' caption='' %}
 The final cardboard prototype
 <br><br>
 
-![pic 14](/images/2017-09-10_adhs-tron/14.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/14.jpg' alt_text='pic 14' caption='' %}
 Inside the prototype, trying to fit the cables in the case...
 <br><br>
 
-![pic 15](/images/2017-09-10_adhs-tron/15.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/15.jpg' alt_text='pic 15' caption='' %}
 Drilling the case
 <br><br>
 
-![pic 16](/images/2017-09-10_adhs-tron/16.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/16.jpg' alt_text='pic 16' caption='' %}
 Mounting the control elements
 <br><br>
 
-![pic 17](/images/2017-09-10_adhs-tron/17.jpg)
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/17.jpg' alt_text='pic 17' caption='' %}
 ADHS-Tron ready to roll!
 <br><br>
 
