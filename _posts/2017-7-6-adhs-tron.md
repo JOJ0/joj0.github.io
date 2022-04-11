@@ -78,6 +78,7 @@ additional features not shown here
 {% include thumb.html filename='/images/2017-09-10_adhs-tron/15.jpg' alt_text='pic 15' caption='Drilling the case' width='49%' float='left' %}
 {% include thumb.html filename='/images/2017-09-10_adhs-tron/16.jpg' alt_text='pic 16' caption='Mounting the control elements' width='49%' float='right' %}
 
-{% include thumb.html filename='/images/2017-09-10_adhs-tron/17.jpg' alt_text='pic 17' caption='ADHS-Tron ready to roll!' width='49%' float='left' clear='yes'%}
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/17.jpg' alt_text='pic 17' caption='ADHS-Tron ready to roll!' width='49%' float='left' %}
+{% include thumb.html filename='/images/2017-09-10_adhs-tron/18.jpg' alt_text='pic 18' caption='After a couple of gigs, Tron still rolling!' width='49%' float='right' clear='yes'%}
 
 Get the final code to this project here: [github.com/joj0/adhs-tron](https://github.com/joj0/adhs-tron). Feel free to fork, send issues and so on!
