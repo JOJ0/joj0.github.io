@@ -135,7 +135,8 @@ img {
   max-width: 100%;
   //margin-bottom: 0px; // jojo tmp
   //padding-bottom: -10px; // jojo tmp
-  //border: 1px solid // jojo tmp
+  border: 6px solid $rosa;
+  border-radius: 12px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -195,14 +196,11 @@ div.date {
 // ###############################
 // ### better picture embedding ##
 .sidebyside {
-    //display: inline-block;
-    //margin-left: auto;
-    //margin-right: auto;
     width: 100%;
     height: 100%;
     img { // standalone pics should have the same margin and border as gallery pics
+        border: 6px solid $rosa;
         margin: 0px;
-        border: 5px solid $rosa;
         //object-fit: contain;
         max-width: 100%;
         max-height: 100%;
@@ -247,20 +245,21 @@ div.pic_row_3 {
 
 p { //  same border as gallery pics for standalone pics (markdown -> inside p)
     img {
-        border: 5px solid $rosa;
+        border: 6px solid $rosa;
     }
 }
 
-a { // no colored border for picture links (from markdown)
+a { // picture links (from markdown)
     img {
-        //border: 5px solid $rosa;
-        border: 0px;
+        // border: 6px solid $rosa;
+        border: 0px;  // generally shouldn't have borders.
     }
 }
 // ### youtube picture embedding ##
 div.outer_ytcontainer {
     margin-bottom: 6px;
-    border: 5px solid $rosa; // same border as images
+    border: 6px solid $rosa; // video border style should be exactly the
+    border-radius: 12px;     // same as with pictures
 }
 
 div.ytcontainer {
@@ -276,8 +275,8 @@ iframe.yt {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0;
-    //border: 1px solid; // jojo tmp
+    // border: 1px solid; // Temp activate to debug border/margin
+    border-radius: 6px; // Fix iframe fitting to outer_ytcontainer border style
 }
 
 // ### my photo gallery ##
@@ -293,16 +292,13 @@ ul.photo-gallery-list {
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
-  //border: 1px solid;
+  //border: 1px solid;  // Temp activate to debug border/margin
 
   li img {
     float: left;
     //margin: 10px;
     margin: 5px;
-    //border: 5px solid #fff;
-    //border: 5px solid $darkerGray;
-    border: 5px solid $rosa;
-    //border: 5px solid transparent;
+    border: 6px solid $rosa;
     max-width: 240px;
   
     //-webkit-transition: box-shadow 0.5s ease;
@@ -339,7 +335,7 @@ img.gallery-photo-zoom {
   //float: left;
   margin: 0px 0px 0px 0px;
   //border: 5px solid $darkerGray;
-  border: 5px solid $rosa;
+  border: 6px solid $rosa;
   //border: 5px solid transparent;
 }
 
