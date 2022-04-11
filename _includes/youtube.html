@@ -1,9 +1,18 @@
-{% if include.width != '' %}
-  <div class="outer_ytcontainer" style="width: {{include.width}}; margin-top:0 auto; margin-left:0 auto; margin-right:0 auto;">
+<!-- If a width is specified, most probably the video should be displayed "inline", thus disable margins -->
+{% if include.clear_before == 'yes' %}
+<div class="clearfix"></div>
+{% endif %}
+
+{% if include.width %}
+<div class="outer_ytcontainer" style="width: {{include.width}}; margin-top:0 auto; margin-left:0 auto; margin-right:0 auto">
 {% else %}
-  <div class="outer_ytcontainer">
+<div class="outer_ytcontainer" style="margin-top: 6px;">
 {% endif %}
   <div class="ytcontainer">
     <iframe class="yt" allowfullscreen src="https://www.youtube.com/embed/{{include.id}}{{include.url_append}}"></iframe>
   </div>
 </div>
+
+{% if include.clear == 'yes' %}
+<div class="clearfix"></div>
+{% endif %}
