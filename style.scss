@@ -135,7 +135,7 @@ img {
   max-width: 100%;
   //margin-bottom: 0px; // jojo tmp
   //padding-bottom: -10px; // jojo tmp
-  border: 6px solid $rosa;
+  border: 3px solid $rosa;
   border-radius: 12px;
 }
 
@@ -199,7 +199,7 @@ div.date {
     width: 100%;
     height: 100%;
     img { // standalone pics should have the same margin and border as gallery pics
-        border: 6px solid $rosa;
+        border: 3px solid $rosa;
         margin: 0px;
         //object-fit: contain;
         max-width: 100%;
@@ -245,7 +245,7 @@ div.pic_row_3 {
 
 p { //  same border as gallery pics for standalone pics (markdown -> inside p)
     img {
-        border: 6px solid $rosa;
+        border: 3px solid $rosa;
     }
 }
 
@@ -258,7 +258,7 @@ a { // picture links (from markdown)
 // ### youtube picture embedding ##
 div.outer_ytcontainer {
     margin-bottom: 6px;
-    border: 6px solid $rosa; // video border style should be exactly the
+    border: 3px solid $rosa; // video border style should be exactly the
     border-radius: 12px;     // same as with pictures
 }
 
@@ -297,8 +297,8 @@ ul.photo-gallery-list {
   li img {
     float: left;
     //margin: 10px;
-    margin: 5px;
-    border: 6px solid $rosa;
+    margin: 7px;
+    border: 3px solid $rosa;
     max-width: 240px;
   
     //-webkit-transition: box-shadow 0.5s ease;
@@ -335,7 +335,7 @@ img.gallery-photo-zoom {
   //float: left;
   margin: 0px 0px 0px 0px;
   //border: 5px solid $darkerGray;
-  border: 6px solid $rosa;
+  border: 3px solid $rosa;
   //border: 5px solid transparent;
 }
 
