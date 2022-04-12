@@ -14,3 +14,4 @@ test.md
 volca-beats-sync
 post-commit-executed
 pre-commit-executed
+.jekyll-cache
