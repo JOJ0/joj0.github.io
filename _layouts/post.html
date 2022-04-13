@@ -11,18 +11,12 @@ layout: default
 
   <div class="date clearfix">
     <span class="left-part">
-      {% if page.published and page.last_modified_at %}
-        This article was first published on {{ page.published | date: "%b %-d, %Y" }}
-      {% elsif page.published %}
-        This article was published on {{ page.published | date: "%b %-d, %Y" }}.
-      {% else %}
-        This article was published on {{ page.date | date: "%b %-d, %Y" }}.
-      {% endif %}
+        Article published {{ page.published | date: "%b %-d, %Y" }}
       {% if page.last_modified_at %}
-        and last updated on {{ page.last_modified_at | date: "%b %-d, %Y" }}.
+        and last updated {{ page.last_modified_at | date: "%b %-d, %Y" }}.
       {% endif %}
       {% unless page.published ==  nil %}
-      I built/coded/did this project around {{ page.date | date: "%B %Y" }}.
+      Project time around {{ page.date | date: "%B %Y" }}.
       {% endunless %}
     </span>
     <span class="right-part">
