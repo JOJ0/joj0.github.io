@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
   @include mobile {
     line-height: 1.4;
+    margin: 0em 0 5px;  // Save space on small screens after headlines!
   }
 }
 
@@ -68,7 +69,7 @@ h1 {
   @include mobile {
     font-size: 26px;
     line-height: 1.4;
-    //margin-bottom: 10px;
+    margin-bottom: 0.5em;  // Save space on small screens after article head!
   }
 }
 
@@ -310,7 +311,8 @@ ul.photo-gallery-list {
     @include mobile {
       //clear: both;
       //float: none;
-      max-width: 125px;
+      max-width: 175px;
+      margin: 2px;
     }
 
     
@@ -393,6 +395,10 @@ div.gallery-photo-nav-overview {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+
+  @include mobile {
+    margin-bottom: 15px;  // Save space on small screens after header/nav
+  }
 }
 
 .masthead {
