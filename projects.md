@@ -8,7 +8,7 @@ Sometimes I don't even know myself how many projects I currently have in the
 backlog. This site is an overview of the most relevant things I am
 working on / am a part of.
 
-## FOSS
+## FOSS Projects
 
 I love **F**ree and **O**pen **S**ource **S**oftware. This is a list
 of projects I am directly involved with.
@@ -19,7 +19,7 @@ A Python module for accessing the API provided by
 [https://discogs.com](https://discogs.com).
 Two other coders and me took over the abandoned github
 repo in June 2020. Discogs didn't have interest in maintaining the Python
-module anymore but a lot of record lovers that also code Python do!
+module anymore but a lot of record lovers that also code Python do! Currently we are 4 people actively maintaining the project.
 
 - [python3-discogs-client github repo](https://github.com/joalla/discogs_client)
 - [our github discussion board](https://github.com/joalla/discogs_client/discussions)
@@ -50,23 +50,22 @@ multi-platform Matrix enduser client go to
 
 Most of all: Matrix is a user-friendly chat and instant messaging system.
 There was no administration tool available for Synapse homeservers that
-suited my needs, thus I wrote one. Other Admins of such servers seem to
-welcome it quite frankly.
+suited my needs, thus I wrote one. Other Admins of such servers seem to welcome
+it quite frankly and it's recommended regularly on
+[#synapse:matrix.org - the main Synapse admin support chatroom](https://matrix.to/#/#synapse:matrix.org).
 
-Contributions and feature requests are sent regularily but still I am looking
-for one or two persons interested in the topic that help me advance it to a
-state that it supports _all_ of the admin API's Synapse currently is offering
-and then help further maintaining the code base.
+
+Currently we are two people actively maintaining the project.
 
 - [synadm github repo](https://github.com/joj0/synadm)
-- [the official public synadm chatroom](https://matrix.to/#/#synadm:peek-a-boo.at)
-- [the Synapse admin support chatroom](https://matrix.to/#/#synapse:matrix.org)
+- [#synadm:peek-a-boo.at - the official public synadm chatroom](https://matrix.to/#/#synadm:peek-a-boo.at)
 - [latest releases / changelog](https://github.com/joj0/synadm/releases)
 - [open issues / feature requests](https://github.com/joj0/synadm/issues)
+- [#synapse:matrix.org - the Synapse admin support chatroom](https://matrix.to/#/#synapse:matrix.org)
 
 
 
-## Music
+## Music Projects
 
 I am a DJ, self-taught musician and event promoter.
 
