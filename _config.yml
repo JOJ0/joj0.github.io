@@ -108,6 +108,8 @@ collections:
     output: true
   charger-tape:
     output: true
+  budgetfx1:
+    output: true
 
 defaults:
   - scope:
@@ -128,5 +130,10 @@ defaults:
   - scope:
       path: ""
       type: charger-tape
+    values:
+      layout: gallery-photo
+  - scope:
+      path: ""
+      type: budgetfx1
     values:
       layout: gallery-photo
