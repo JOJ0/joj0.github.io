@@ -13,8 +13,8 @@ layout: default
     <span class="left-part">
         Article published {{ page.published | date: "%b %-d, %Y" }}
       {% if page.last_modified_at %}
-        and last updated {{ page.last_modified_at | date: "%b %-d, %Y" }}.
-      {% endif %}
+        and last updated {{ page.last_modified_at | date: "%b %-d, %Y" }}
+      {% endif %},
       {% unless page.published ==  nil %}
       Project time around {{ page.date | date: "%B %Y" }}.
       {% endunless %}
