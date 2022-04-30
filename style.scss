@@ -386,6 +386,17 @@ div.gallery-photo-nav-overview {
   //display: inline-block;
   div {display:inline-block;}
 }
+div.gallery-photo-title {
+  // border: 1px solid $black;  // DEBUG
+  font-size: 20px;
+  display: inline-block;
+  max-width: 580px;
+  margin-top: -2.5px;
+
+  @include mobile {
+    max-width: 180px;
+  }
+}
 
 /*********************/
 /* LAYOUT / SECTIONS */
