@@ -3,7 +3,7 @@ layout: post
 title: ADHS-Tron - MIDI controlled Korg Monotron
 comments: true
 published: 2018-01-31
-last_modified_at: 2022-04-11
+last_modified_at: 2022-04-30
 image: images/2017-09-10_adhs-tron/18-th.jpg
 ---
 
