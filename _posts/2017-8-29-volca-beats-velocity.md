@@ -10,10 +10,6 @@ image: /images/2017-8-29_volca-beats-velocity/MidiPipe7-th.png
 
 Out of the box the Volca Beats is not velocity sensitive, neither when triggered via MIDI, nor when using the onboard 16-step sequencer. 
 
-{::comment}
-![Volca Beats pic1](https://www.klangfarbe.com/bilder/S/A-S37948-2-1.jpg)
-{:/comment}
-
 I was not happy when I found this out and immediately tried to work around the problem. What the Beats _does_ understand is altering the volume of the different drum parts via a MIDI Control Change (CC) message. According to Korg&#39;s official [MIDI implementation chart](http://i.korg.com/uploads/Support/USA_volcabeats_MIDI_Chart_E.pdf) these are the CC numbers controlling the volume levels:
 
 ~~~ applescript
@@ -51,7 +47,7 @@ Alright, drawing velocity with an automation line ranges in the top 5 of the mos
 
 My next idea was to use the Freeware MIDI manipulation software [MidiPipe](http://www.subtlesoft.square7.net/MidiPipe.html) and just translate each notes velocity value to a newly generated CC message. The values of these two types of MIDI messages generally range from 0 to 127, so this should work out without any complicated maths magic.
 
-[![MidiPipe pic1](http://www.subtlesoft.square7.net/MidiPipe_files/shapeimage_1.png)](http://www.subtlesoft.square7.net)
+{% include figure.html filename='/images/2017-8-29_volca-beats-velocity/subtlesoft_midipipe_from_website.png' alt_text='MidiPipe pic from website' caption='' width="100%" img_style="border:0px;" margin="0px" float="left" %}
 
 MidiPipe basically works like this: You put togehter an input, a couple of modules and an ouptut. A MIDI messages flows through one module after the other from top to bottom until it reaches an output which in my case would be the MIDI port the Volca is connected to. For more details click the link above to MidiPipe's homepage. There are quite a lot of types of modules that are able to translate, manipulate or even remove messages but they all didn't manage to solve my problem. One of the main reasons was the lack of being able to generate a new message according to values I got from another message.
 
