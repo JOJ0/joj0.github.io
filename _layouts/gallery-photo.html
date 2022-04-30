@@ -22,7 +22,6 @@ layout: default
 </div>
 
 <div class="post">
-  <h1 style="text-align: center;">{{ page.title }}</h1>
 
     <div class="gallery-photo-figure">
       <figure>
@@ -36,9 +35,19 @@ layout: default
           <a href="{{prevurl}}">prev</a>
         </div>
         {% endif %}
+
+        <!--BEGIN TITLE AND/OR CAPTION-->
+        {% if page.caption != '' %}
         <div class="gallery-photo-caption">
-          <figcaption>{{ page.caption }}</figcaption>
+          <figcaption>{{ page.title }} - {{ page.caption }}</figcaption>
         </div>
+        {% else %}
+        <div class="gallery-photo-title">
+          {{ page.title }}
+        </div>
+        {% endif %}
+        <!--END TITLE AND/OR CAPTION-->
+
         {% if nexturl %}
         <div class="gallery-photo-nav" style="float:right; margin-right:-1px">
           <a href="{{nexturl}}">next</a>
