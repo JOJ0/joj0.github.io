@@ -26,9 +26,7 @@ layout: default
 
     <div class="gallery-photo-figure">
       <figure>
-        <div style="margin:0px; padding:0px">
-          <img class="gallery-photo-zoom" src="{{ page.image-path }}" alt="{{ page.image-path }}" />
-        </div>
+        <!--BEGIN PREV/NEXT TOP-->
         {% if prevurl %}
         <div class="gallery-photo-nav" style="float:left; margin-left:0px;">
           <a href="{{prevurl}}">prev</a>
@@ -50,6 +48,37 @@ layout: default
           <a href="{{nexturl}}">next</a>
         </div>
         {% endif %}
+        <!--END PREV/NEXT TOP-->
+
+        <!--BEGIN THE ACTUAL PIC-->
+        <div style="margin:0px; padding:0px">
+          <img class="gallery-photo-zoom" src="{{ page.image-path }}" alt="{{ page.image-path }}" />
+        </div>
+        <!--END THE ACTUAL PIC-->
+
+        <!--BEGIN PREV/NEXT BOTTOM-->
+        {% if prevurl %}
+        <div class="gallery-photo-nav" style="float:left; margin-left:0px;">
+          <a href="{{prevurl}}">prev</a>
+        </div>
+        {% else %}
+        <div class="gallery-photo-nav-inactive" style="float:left; margin-left:0px;">
+          <a href="{{prevurl}}">prev</a>
+        </div>
+        {% endif %}
+        <div class="gallery-photo-caption">
+          <figcaption>{{ page.caption }}</figcaption>
+        </div>
+        {% if nexturl %}
+        <div class="gallery-photo-nav" style="float:right; margin-right:-1px">
+          <a href="{{nexturl}}">next</a>
+        </div>
+        {% else %}
+        <div class="gallery-photo-nav-inactive" style="float:right; margin-right:-1px">
+          <a href="{{nexturl}}">next</a>
+        </div>
+        {% endif %}
+        <!--END PREV/NEXT BOTTOM-->
       </figure>
     </div>
 
