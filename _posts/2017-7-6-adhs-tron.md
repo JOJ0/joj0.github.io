@@ -1,13 +1,13 @@
 ---
 layout: post
-title: The story of ADHS-Tron
+title: ADHS-Tron - MIDI controlled Korg Monotron
 comments: true
 published: 2018-01-31
 last_modified_at: 2022-04-11
-image: images/2017-09-10_adhs-tron/17-th.jpg
+image: images/2017-09-10_adhs-tron/18-th.jpg
 ---
 
-The mission: My friend Lena&#39;s Korg Monotron should become controllable via MIDI from a DAW. <br>
+The mission: My friend L&#39;s Korg Monotron should become controllable via MIDI from a DAW. <br>
 
 <div class="clearfix">
 {% include thumb.html filename='/images/2017-09-10_adhs-tron/1.jpg' alt_text='pic 1' caption='Starting Point: Monotron, a Perfboard and an Arduino Uno' width="49%" float="left" %}
