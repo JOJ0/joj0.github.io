@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, my name is J0J0, I am a self taught musician, DJ, Open Source aficionado, Linux Sysadmin, DevOps, Python programmer, maintainer of several Open Source software projects and sometimes build and hack electronic things. Most of my knowledge of anything I got from the internet. Now it&#39;s time to give something back: This blog is for all.
+Hi, my name is J0J0, I am a self taught musician, DJ, Open Source aficionado, Linux Sysadmin, DevOps, Python programmer, maintainer of several Open Source software projects and sometimes build and hack electronic things. Most of my knowledge of anything I got from the internet. Now it&#39;s time to give something back: This blog is for you, this blog is _para todos_.
 
 Find me on other platforms:
 

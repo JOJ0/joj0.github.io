@@ -407,6 +407,7 @@ div.gallery-photo-title {
 //
 
 .wrapper-masthead {
+  // border: 1px solid; // DEBUG
   margin-bottom: 50px;
 
   @include mobile {
@@ -415,6 +416,7 @@ div.gallery-photo-title {
 }
 
 .masthead {
+  // border: 1px solid; // DEBUG
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
 
@@ -424,6 +426,7 @@ div.gallery-photo-title {
 }
 
 .site-avatar {
+  // border: 1px solid; // DEBUG
   float: left;
   //width: 70px;
   width: 70px;
@@ -444,6 +447,7 @@ div.gallery-photo-title {
 }
 
 .site-info {
+  // border: 1px solid; // DEBUG
   float: left;
 
   @include mobile {
@@ -454,29 +458,46 @@ div.gallery-photo-title {
 }
 
 .site-name {
+  // border: 1px solid; // DEBUG
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  //font-family: $helveticaNeue;
   font-family: $ptSans;
-  //font-weight: 300;
-  font-weight: 300;
-  //font-size: 28px;
+  //font-weight: 300;  // Original STUFF I DO setting.
+  font-weight: 10;
+  //font-size: 28px;  // Original STUFF I DO setting.
   font-size: 28px;
   //letter-spacing: 1px;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   line-height: 1.7; // jojo fixate blog name in case h1 changes
+  float: left;  // Site name and descr. next to each other (not on-top of)
+
+  margin-bottom: 0px;  // Handle space in .site-description
+}
+
+.site-suffix {
+  color: $gray;
+  letter-spacing: 2.95px; // Original STUFF I DO setting.
+  float: left;  // Site name suffix next to each other (not on-top of)
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 0px;  // Don't interfere with below (.site-description)
+  margin-left: 8px;
+  letter-spacing: 1px;
 }
 
 .site-description {
-  //margin: -5px 0 0 0;
-  margin-top: -5px;
+  // margin-top: -5px;  // Original STUFF I DO setting.
+  margin-top: 0px;  // Original STUFF I DO setting.
   margin-left: 2.5px;
   color: $gray;
-  //font-size: 16px;
-  font-size: 16px;
-  //font-family: $ptMono; // jojo
-  letter-spacing: 2.95px; // jojo
+  font-size: 16px;  // Original STUFF I DO setting.
+  font-family: $ptMono; // jojo
+  letter-spacing: 2.95px; // Original STUFF I DO setting.
+
+  // font-variant: small-caps;
+  font-size: 12px;
+  letter-spacing: 1px;
 
   @include mobile {
     margin: 3px 0;
@@ -484,6 +505,7 @@ div.gallery-photo-title {
 }
 
 nav {
+  // border: 1px solid; // DEBUG
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   //font-family: $helveticaNeue;
