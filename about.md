@@ -8,7 +8,11 @@ Hi, my name is J0J0, I am a self taught musician, DJ, Open Source aficionado, Li
 
 Find me on other platforms:
 
-[soundcloud.com/jojotodos](http://soundcloud.com/jojotodos), [youtube.com/user/jojotodos](http://youtube.com/user/jojotodos), [mixcloud.com/J0J0](http://mixcloud.com/J0J0), [gitlab.com/J0J0](http://gitlab.com/J0J0), [github.com/joj0](http://github.com/joj0)
+- [soundcloud.com/jojotodos](http://soundcloud.com/jojotodos)
+- [youtube.com/user/jojotodos](http://youtube.com/user/jojotodos)
+- [mixcloud.com/J0J0](http://mixcloud.com/J0J0)
+- [gitlab.com/J0J0](http://gitlab.com/J0J0)
+- [github.com/joj0](http://github.com/joj0)
 
 ### Contact
 
@@ -45,7 +49,7 @@ If you'd like to stay informed, register on the jojotodos.net mailinglist. It ke
   <div class="clearfix"></div>
 
   <div class="mc-field-group input-group clearfix" style="margin-top: 0.8em;">
-    <strong style="float: none">What would you like to be informed about? </strong>
+    <strong style="float: none">What's of interest to you? </strong>
     <ul>
       <li style="list-style: none;">
         <input type="checkbox" value="1" name="group[4635][1]" id="mce-group[4635]-4635-0" checked>
@@ -87,3 +91,4 @@ If you'd like to stay informed, register on the jojotodos.net mailinglist. It ke
 
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+
