@@ -64,6 +64,21 @@ Currently we are two people actively maintaining the project.
 - [#synapse:matrix.org - the Synapse admin support chatroom](https://matrix.to/#/#synapse:matrix.org)
 
 
+### beets
+
+A couple of months ago I joined the beets project to help maintain it. Beets
+is a super-sophisticated command line tool to tag and organize music files. It
+helps me bring my Python coding abilities to another level and thanks to the
+mentoring of the project owner and other project members it's always fun to
+submit to it.
+
+If you are into cli tools: Check it out. If you are a programmer: We need your
+help! There is so much things to do and potential to improve in that project!
+
+- [beets website](https://beets.io)
+- [beets github repo](https://github.com/beetbox/beets)
+
+
 
 ## Music Projects
 
@@ -113,3 +128,4 @@ Well, not much to say here as you are on this site already. Just head over to
 the blog posts overview and hava a look around.
 
 - [This blog's article overview](https://blog.jojotodos.net/)
+
