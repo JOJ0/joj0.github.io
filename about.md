@@ -18,6 +18,8 @@ Find me on other platforms:
 
 Preferrably open an issue on github in a project's corresponding repo, comment directly below a blog post, or contact me on Matrix: @ jojo : peek - a - boo . at
 
+If you are a recruiter and want to hire me go to [about.jojotodos.net](https://about.jojotodos.net).
+
 If you'd like to stay informed, register on the jojotodos.net mailinglist. It keeps you up to date about events & concerts I am organizing and/or about new posts on this site. Please use the checkboxes on the bottom of the form to select which information you would like to receive.
 
 <!-- Begin Mailchimp Signup Form -->
