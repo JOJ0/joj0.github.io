@@ -58,7 +58,7 @@ photogallery here (collection has to be createdi first):
     {% for photo in site.the_collections_name %}
     <li>
       <a href="{{ photo.url | prepend: site.baseurl }}" name="{{ photo.title }}">
-        <img src="{{ photo.image-path|remove: ".jpg"| append: '-th'|append: ".jpg" }}" alt="{{ photo.caption }}" />
+        <img src="{{ photo.image-path|remove: ".jpg"| append: '-th'|append: ".jpg" }}" alt="{{ photo.caption }}" style="width: 31%" />
       </a>
     </li>
     {% endfor %}
