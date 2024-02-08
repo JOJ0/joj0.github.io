@@ -110,6 +110,8 @@ collections:
     output: true
   budgetfx1:
     output: true
+  mach-drm:
+    output: true
 
 defaults:
   - scope:
@@ -135,5 +137,10 @@ defaults:
   - scope:
       path: ""
       type: budgetfx1
+    values:
+      layout: gallery-photo
+  - scope:
+      path: ""
+      type: mach-drm
     values:
       layout: gallery-photo
