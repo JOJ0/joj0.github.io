@@ -1,0 +1,30 @@
+---
+layout: post
+title: Machinedrum Phones Socket Replace
+comments: true
+published: 2024-02-08
+image: /images/2019-3-22-machine-drum/37.jpg
+draft: false
+---
+Back in 2019, P. came to me to help them do some soldering. They had a regular pcb-mount phones socket (6.3 mm, 1/4″) and the legendary Elektron Machinedrum in the luggage.
+
+"No P., we don't _do_ premium content on this blog! It's _para todos_!"
+
+Alright, so this is replacing the Machinedrum's phones socket explained in pictures, not words!
+
+<div class="photo-gallery-frame clearfix">
+  <ul class="photo-gallery-list">
+    {% for photo in site.mach-drm %}
+    <li>
+      <a href="{{ photo.url | prepend: site.baseurl }}" name="{{ photo.title }}">
+        <img src="{{ photo.image-path|remove: ".jpg"| append: '-th'|append: ".jpg" }}" alt="{{ photo.caption }}" style="width: 31%" />
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+### Machinedrumming again <3
+
+{% include youtube.html id="CXkVZGCcJv8" width="100%" %}
+<br><br>
