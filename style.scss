@@ -142,6 +142,31 @@ img {
   border-radius: 12px;
 }
 
+table {
+  border-bottom: 3px dotted $rosa;
+  border-top: 0px dotted $rosa;
+  width: 100%
+}
+table th {
+  border-top: 1px dotted $rosa;
+  border-left: 1px dotted $rosa;
+  border-right: 1px dotted $rosa;
+}
+table th:first-of-type {
+    width: 35%;
+}
+table th:nth-of-type(2) {
+    width: 65%;
+}
+table tr {
+  border-bottom: 3px dotted $rosa;
+}
+table td {
+  border-left: 1px dotted $rosa;
+  border-right: 1px dotted $rosa;
+}
+
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
