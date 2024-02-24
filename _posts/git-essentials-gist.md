@@ -145,7 +145,7 @@ _Note (generalizing): Changing history is perfectly fine in personal projects bu
 |--------------------- | - |
 | `git commit --amend`        | Add all staged changes to the last commit (and be prompted for commit message changes). If no staged changes are present, this simply is **the command to correct your commit message!** |
 | `git commit -a --amend`     | Add **all changes in all files** to last commit |
-| `git commit -a -v --amend`  | My personal favorite: Add **all changes in all files** to last commit, adapt **commit message**, while additionally **showing the _diff_** of all those changes within the commit message editor. _This is an immensive help when writing commit messages!_ |:w
+| `git commit -a -v --amend`  | My personal favorite: Add **all changes in all files** to last commit, adapt **commit message**, while additionally **showing the _diff_** of all those changes within the commit message editor. _This is an immensive help when writing commit messages!_ |
 
 
 ## Jumping to "points in time"
@@ -182,7 +182,7 @@ _Hint: One use-case of `stash` is whenever you forgot something in your last com
 
 |  ~~~~~~~~~~~~~~~~ |   |
 | ----------------- | - |
-| `git rm <filename>` | Delete a file and **additinoally** stage that change for the next commit |
+| `git rm <filename>` | Delete a file and **additionally** stage that change for the next commit |
 
 _Hint: Deleting with regular operating system methods (File browser, `rm` command) is certainly also possible. You'd have to stage that change with `git add <filename>` in that case. `git rm`. spares you that step_
 
@@ -322,7 +322,7 @@ _Hint: GitHub saves their collection of templates [in a public repo](https://git
 ## Removing instead of commenting out lines
 Beginning developers tend to comment out a lot of stuff they are not sure about, want to keep it for reference and the likes. That basically is a good thing but there is a better way: Learn to read _diffs_ and how to get those changes back!
 
-So instead of putting a comment mark in front of a line (`#`, `//`, ...), simply delete it. Keeping this change (the deletion) in a separate commit with a descriptive commit message helps to retrieve it easily later on. Often the purpose of "commenting out" is because of "keeping it for reference".
+So instead of putting a comment mark in front of a line (`#`, `//`, ...), simply delete it. Keeping such a change (the deletion) in a separate commit with a descriptive commit message, allows for easy retrieval later on. Often the purpose of "commenting out" is because of "keeping it for reference".
 
 So for example we deleted a line from a CSS file and recorded that change in a separate commit, we can easily look it up later on with `git show <commit-hash>`:
 
