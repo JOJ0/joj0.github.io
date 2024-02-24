@@ -20,7 +20,11 @@ layout: default
         </div>
 
           <div class="excerpt">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a>
+            {% if post.custom_excerpt %}
+              <a href="{{ site.baseurl }}{{ post.url }}"><p>{{ post.custom_excerpt }}</p></a>
+            {% else %}
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</a>
+            {% endif %}
           </div>
 
         <div class="timestamp">
