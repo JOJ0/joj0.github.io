@@ -145,7 +145,7 @@ img {
 table {
   border-bottom: 3px dotted $rosa;
   border-top: 0px dotted $rosa;
-  width: 100%
+  width: 100%;
 }
 table thead {
   visibility: collapse;
@@ -158,10 +158,18 @@ table th {
   border-right: 1px dotted $rosa;
 }
 table th:first-of-type {
-    width: 35%;
+  width: 35%;
+
+  @include mobile {
+    width: 50%;
+  }
 }
 table th:nth-of-type(2) {
-    width: 65%;
+  width: 65%;
+
+  @include mobile {
+    width: 50%;
+  }
 }
 table tr {
   border-bottom: 3px dotted $rosa;
