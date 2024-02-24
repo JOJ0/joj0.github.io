@@ -103,7 +103,7 @@ _**As a rule of thumb, before you do anything with Git, use them!**_
 
 _**They all are read-only and can be issued safely any time.**_
 
-| ~~~~~~~~~~~~~~~~~~~~~~ |  |
+|  |  |
 | ---------------------- | - |
 | `git status`        | Displays files with _uncommited_ changes, _untracked_ files and gives hints in what state Git is in general. **Your most important git command!** |
 | `git log`           | The history. Displays the list of commits including all the details. |
@@ -120,7 +120,7 @@ Coming to Git's main purpose: Tracking changes in files. The "chunks" we save th
 
 _My personal rule of thumb and number 1 recommendation to any Git-non-experts: **Never** commit without double checking **what** will be committed with `git diff` and `git status`. Make it a habit!_
 
-| ~~~~~~~~~~~~~~~~~~~~~~~~ |   |
+|  |   |
 |------------------------- | - |
 | `git add <filename>`       | Hand over a file into Git's control. It will be added with the _next_ commit. We call this "staging for a commit" |
 | `git add .`               | Hand over **all files** in the directory into Git's control. It will be added with the _next_ commit. |
@@ -141,7 +141,7 @@ If a commit is done it can still be changed, you can "amend" to it. The order of
 
 _Note (generalizing): Changing history is perfectly fine in personal projects but needs to be thought through carefully when working in teams. Don't worry about it for now and use below commands often to fix/improve your existing commits_
 
-| ~~~~~~~~~~~~~~~~~~~~ |   |
+|  |   |
 |--------------------- | - |
 | `git commit --amend`        | Add all staged changes to the last commit (and be prompted for commit message changes). If no staged changes are present, this simply is **the command to correct your commit message!** |
 | `git commit -a --amend`     | Add **all changes in all files** to last commit |
@@ -151,7 +151,7 @@ _Note (generalizing): Changing history is perfectly fine in personal projects bu
 ## Jumping to "points in time"
 To change the current state of a repo you can jump to any commit referencing it by its _commit-hash_. A commit can also have a "human readable" name, that is called a _branch_. The default branch Git creates for you is called `main` (or `master` in older Git versions).
 
-| ~~~~~~~~~~~~~~~~ |   |
+|  |   |
 | --------------------- | - |
 | `git checkout <hash>` | Set the repo to the state of that commit |
 | `git checkout main`          | Set the repo back to the state of the branch named `main` (essentially this **usually** is the command to return to the most recent commit.) |
@@ -160,7 +160,7 @@ To change the current state of a repo you can jump to any commit referencing it 
 ## Starting a Git repo
 Any directory, no matter if entirely empty or populated with files already can be translated into a Git repo.
 
-| ~~~~~~~~~~~~~~~~~ |   |
+|  |   |
 | ------------ | - |
 | `git init`   | Initialize the current directory as a Git repo (essentially creating a hidden subdirectory called `.git`) |
 
@@ -170,7 +170,7 @@ _Hint: Typical steps after `git init` are creating and committing a `.gitignore`
 ## Putting things aside
 Sometimes you'd want to "move aside" your current, uncommited changes (without commiting them) to do something else with git that requires it.
 
-|  ~~~~~~~~~~~~~~ |   |
+|   |   |
 | --------------- | - |
 | `git stash`     | Move aside all unstaged changes onto the _stash stack_ |
 | `git stash pop` | Get back the top-most entry from the _stash stack_ |
@@ -180,7 +180,7 @@ _Hint: One use-case of `stash` is whenever you forgot something in your last com
 
 ## Deleting files
 
-|  ~~~~~~~~~~~~~~~~ |   |
+|   |   |
 | ----------------- | - |
 | `git rm <filename>` | Delete a file and **additionally** stage that change for the next commit |
 
@@ -192,7 +192,7 @@ _Hint: Keeping deletions in separate commits, makes it easy to restore those fil
 ## Removing uncommited changes
 Sometimes you experimented with something which doesn't work anyway, want to get rid of it and start from a "known good" state.
 
-|  ~~~~~~~~~~~~~~~~~~~~ |   |
+|   |   |
 | ----------------- | - |
 | `git reset --hard HEAD` | Delete all uncommited changes and reset the repo the state of the previous/the top-most commit. `HEAD` references the _top-most commit_! |
 
@@ -204,7 +204,7 @@ Any change you ever recorded with Git can be restored, even entire file deletion
 
 Lookup the change you want to retrieve with `git log` (read your commit messages) and display the details (the actual changes) of a commit with `git show <commit-hash>`. If you found what you were looking for, use below's checkout command to get that file's change back.
 
-|  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ |   |
+|   |   |
 | --------------- | - |
 | `git checkout <commit-hash> <filename>`| Get back the state of the file as it was in the specified commit. You will get it as _staged_ changes already. Use `git status` and `git diff --staged` to see them. |
 
@@ -216,27 +216,27 @@ _Hint: Usually if you find the commit that _removed_ something (a line or even a
 ## Working with Git servers
 A local Git repo can be connected to another Git repo hosted on a server. Git calls those adresses _remotes_. A Git repo can be connected to **one or multiple** _remotes_.
 
-|  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ |   |
+|   |   |
 | --------------- | - |
 | `git remote -v` | Display all remotes |
 | `git remote add myrepo https://github.com/username/reponame.git` | Connects the local Git repo to the remote repo hosted on GitHub and naming the remote  `myrepo` |
 
 When a repo is existing on a server already, it can be _cloned_, which creates a local copy of that repo into a subdirectory including a _remote_ entry already.
 
-|  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|   |
+|  |   |
 | --------------- | - |
 | `git clone https://github.com/username/reponame.git myrepo` | Clone the repo into the local directory `myrepo`
 | `git clone https://github.com/username/reponame.git` | Clone the repo into the local directory `reponame` (automatically picks the remote repo's name for the foldername)
 
 As long as proper remote entries are available, data can be transferred to servers, as well as retrieved from them. Assuming there is only one _remote_ configured this works like that:
-|  ~~~~~~~~~~~~~~~~~|   |
+|  |   |
 | --------------- | - |
 | `git push` | Send to the _remote_ |
 | `git pull` | Retrieve from _remote_ |
 
 When collaborating on the same repository, Git needs to handle scenarios where others may have pushed changes to the server while you worked on your offline copy. If you attempt to push your latest commits, Git will prevent it. Instead, you must first pull down those changes, integrate them locally, and then proceed with pushing your changes. The command best suited for this task is:
 
-|  ~~~~~~~~~~~~~~~~~|   |
+|  |   |
 | --------------- | - |
 | `git pull --rebase` | Move local changes aside, retrieve new commits from _remote_, integrate them into local copy, and put your previous local changes on top of it again. Now Git will allow sending your changes with `git push`. |
 
