@@ -175,7 +175,7 @@ Sometimes you'd want to "move aside" your current, uncommited changes (without c
 | `git stash`     | Move aside all unstaged changes onto the _stash stack_ |
 | `git stash pop` | Get back the top-most entry from the _stash stack_ |
 
-_Hint: One use-case of `stash` is whenever you forgot something in your last commit and had started to work _on the next thing_ already, i.e. changed code already: `git stash` all those changes. Fix what you forgot and `git commit -a --amend`  to your previous commit. Get back your changes with `git stash pop` and move on._
+_Hint: One use-case of `stash` is whenever you forgot something in your last commit and had started to work *on the next thing* already (i.e. changed code already): `git stash` all those changes. Fix what you forgot and `git commit -a --amend`  to your previous commit. Get back your changes with `git stash pop` and move on._
 
 
 ## Deleting files
@@ -228,7 +228,8 @@ When a repo is existing on a server already, it can be _cloned_, which creates a
 | `git clone https://github.com/username/reponame.git myrepo` | Clone the repo into the local directory `myrepo`
 | `git clone https://github.com/username/reponame.git` | Clone the repo into the local directory `reponame` (automatically picks the remote repo's name for the foldername)
 
-As long as proper remote entries are available, data can be transferred to servers, as well as retrieved from them. Assuming there is only one _remote_ configured this works like that:
+As long as proper remote entries are available, data can be transferred to servers, as well as retrieved from them. Assuming there is only one _remote_ configured, use:
+
 |  |   |
 | --------------- | - |
 | `git push` | Send to the _remote_ |
