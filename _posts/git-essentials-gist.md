@@ -39,10 +39,11 @@
     - [pyenv](#pyenv)
 
 # Introduction
-This is a **cheat sheet** and my personal **best practice collection** aimed at ongoing developers, DevOps engineers, sysadmins and other people interested in getting started using [Git](https://git-scm.com/). After roughly 10 years of using it myself and often having successfully introduced its sometimes complex paradigms to both former sysadmin colleagues and novice developers, I thought it's time for a write-up accompanying my teaching.
+This is a **cheat sheet** and my personal **best practice collection** aimed at ongoing developers, DevOps engineers, sysadmins anyone else trying to get started with [Git](https://git-scm.com/). After roughly 10 years of using it myself and having successfully introduced quite a few fellow sysadmins and developers to it, I thought it's time for a write-up.
 
+Basically this document lists Git commands including `--options` I personally find most helpful and wish I'd known when I first got in to contact with Git.
 
-This document lists commands (including `--options`) I find most helpful. At the very end of the documents there is an [examples section](#example-use-cases) that puts some of them to use in real-life scenarios.
+Close to the end of the document there is an [examples section](#example-use-cases) that runs through possible real-life scenarios, putting some of the contents together into common workflows.
 
 
 ## Quick Guide
