@@ -302,7 +302,7 @@ Examples for files you _usually_ do not want to be commited **ever** are:
 - Any other files you keep directly in your repo directory because you like to have them handy (documentation, code templates, CSS templates, ...).
 
 A `.gitignore` file for a JavaScript project could look like this:
-```
+```bash
 .DS_Store
 .vscode/
 .cache
@@ -326,7 +326,7 @@ So instead of putting a comment mark in front of a line (`#`, `//`, ...), simply
 
 So for example we deleted a line from a CSS file and recorded that change in a separate commit, we can easily look it up later on with `git show <commit-hash>`:
 
-```
+```diff
 commit 27399aedf2c6f4295b80e42ad2970006f9317bde (HEAD -> main)
 Author: J0J0 Todos <jojo@peek-a-boo.at>
 Date:   Thu Jan 18 11:28:38 2024 +0100
@@ -366,24 +366,24 @@ You have a directory containing a static website project already. You have files
 You `cd` into the directory and run `git init`.
 
 To make sure Git never commits some things, you create a file `.gitignore` in the directory containing the following:
-```
+```bash
 .vscode
 node_modules
 ```
 
 You _add_ and _commit_:
-```
+```bash
 git add .gitignore
 git commit -m "Initial commit, adding .gitignore"
 ```
 
 You realize that you want to elaborate on your commit message, so you call:
-```
+```bash
 git commit --amend
 ```
 
 You extend your commit message to be:
-```
+```bash
 Initial commit, adding .gitignore
 
 to make sure the vscode config dir and any installed node modules won't ever
@@ -392,13 +392,13 @@ be committed to Git.
 
 In a second commit you want to add what you already had coded in your html, css and js files. You first inform yourself which files git sees as "untracked files" by issuing `git status`. You see your three files as "untracked" and decide you want to add them all together in one commit:
 
-```
+```bash
 git add .
 git commit -v
 ```
 You get presented an editor that prompts you for the commit message and additionally displays the contents of your files (-v option), which helps you to find the right words for your message. You describe what you roughly had coded so far:
 
-```
+```bash
 Basic structure of the project
 
 The following features are working so far:
@@ -412,7 +412,7 @@ You save and quit the editor and have a look at your history with `git log`. You
 
 The next day you come back to your project, you decide you want to use the `axios` JavaScript package. You install it with `npm install axios` and then check with `git status` which new files/dirs Git now sees as "untracked". It shows two files named `package.json` and `package-lock.json`. The `node_modules` directory (that `npm` just created) is not being shown since yesterday you made sure it will be ignored already. You commit those two files:
 
-```
+```bash
 git add package.json package-lock.json
 git commit -m "Add npm package files after installing axios"
 ```
@@ -421,7 +421,7 @@ You make sure with `git status` that there are no "untracked" files and open cha
 
 You start working on your project's html, js and css files and after some time have a navigation bar working that required changes in all three files. You display the changes with `git diff`, skim quickly through the _diff_ to remind yourself what roughly you had coded and then commit them with:
 
-```
+```bash
 git commit -a -v
 ```
 
@@ -435,7 +435,7 @@ You `cd` into the `myapp` directory and run `git status`. You realize that `crea
 
 `git status` also tells you `nothing to commit, working tree clean`, which seems odd but after issuing `git log` you understand what's going on: `create-react-app` already did an initial commit for you. It looks like this:
 
-```
+```bash
 commit ff28dc2bb2b0f40d625e790fbdaf7895041232ec (HEAD -> main)
 Author: J0J0 Todos <jojo@peek-a-boo.at>
 Date:   Thu Jan 18 14:06:47 2024 +0100
@@ -452,7 +452,7 @@ You _stage_ the deletion of the logo with `git rm src/logo.svc` as a first step.
 You remove all code that relates to that log file in the index.js
 
 `git diff` now tells you what exactly you had removed and you check visually if the change looks alright:
-```
+```diff
 diff --git a/src/App.js b/src/App.js
 index 3784575..e914079 100644
 --- a/src/App.js
@@ -477,7 +477,7 @@ index 3784575..e914079 100644
 You see that the `import logo...` line will be removed and so will the line with the `<img>` tag. You have another look on the real App in the webbrowser and decide that it's fine.
 
 You _stage_ all those changes and _commit_ with:
-```
+```bash
 git commit -a -m "Remove default logo and all code referencing it"
 ```
 
@@ -486,7 +486,7 @@ You convince yourself again that your deletions are recorded nicely, so you can 
 
 
 As a final step you check `git log` and it looks like this:
-```
+```bash
 commit 61eacfab5213daa3685329976ed5a259a0fc15f4 (HEAD -> main)
 Author: J0J0 Todos <jojo@peek-a-boo.at>
 Date:   Thu Jan 18 14:45:08 2024 +0100
@@ -524,11 +524,11 @@ So to be exact, a _shell_ is not a _Terminal_. A _Terminal_ just runs a _shell_ 
 Nowadays macOS and Linux often use `zsh` as the default shell, which in fact is a `bash`-compatible shell.
 
 To find out which shell you are using, do
-```
+```bash
 echo $SHELL
 ```
 If that points to something like this: `/bin/sh`, and you still are not sure, do
-```
+```bash
 sh --version
 ```
 
