@@ -1,3 +1,4 @@
+- [Introduction](#introduction)
   - [Quick Guide](#quick-guide)
   - [How to use this document](#how-to-use-this-document)
   - [Clearing up some myths](#clearing-up-some-myths)
