@@ -3,14 +3,25 @@ layout: post
 title: Multiple Beets Libraries on one machine?
 comments: true
 published: 2024-11-1
-image: /images/2022-5-1-mutliple-beets-libs/beets_logo.png
+image: /images/2022-5-1-multiple-beets-libs/beets_logo.png
 draft: true
 ---
 
+{% include figure.html filename='/images/2022-5-1-multiple-beets-libs/beets_logo.png' alt_text='the Beets beetroot logo' caption='' width="20%" float="left" margin="4.5px 10px 0 0" img_style="border: 5px solid #303030;" %}
 
-This article is directed at advanced users of Beets - the best music library manager out there. If you are a music collector who uses command-line tools but haven't discovered it yet, [start here](https://beets.io). If you already use it and are exploring the configuration possibilities, or if you are a contributing developer, this is for you!
+This article is about [Beets  - the best music library manager out there](https://github.com/beetbox/beets/blob/master/README.rst). If you are a music collector who uses command-line tools but haven't discovered it yet, [watch this short demo video](https://beets.io) and read the [Getting Started Guide](https://beets.readthedocs.io/en/stable/guides/main.html).
 
-Soon after I started using Beets and contributing to the project, I wanted to manage multiple Beets libraries installed within a single user account on my macOS and Linux machines. The initial goal was to find a way to quickly test new code or config settings and easily and safely switch back to working in my production library. Later on I realized the setup's potential to even separate contentwise.
+
+**This article is not a beginners guide but describes an opinionated but handy setup for Beets developers and advanced users.**
+
+
+
+[!NOTE]  asdfjklö
+
+Soon after I started contributing to the Beets project, I wanted to manage multiple Beets libraries installed within a single user account on my macOS and Linux machines. The initial goal was to find a way to quickly test new code or config settings and comfortably switch back to working in my production library. Later on I realized the setup's potential to even separate contentwise.
+
+
+## Why Prod, Dev and another Beets library?
 
 Currently I run 3 Beets installations:
 
@@ -18,7 +29,7 @@ Currently I run 3 Beets installations:
 - **dev** -> a development setup I use to play around with new features, test unmerged pull requests, get crazy with the config
 - **book** -> a separate library I use for audio books about language training, music education practice tracks and actual audio books. The reason I keep this separate is to prevent mixing up music search results (including smartplaylists) with any non-music content.
 
-## Prerequisites 
+## Tools to make it work 
 
 This tutorial assumes the following tools installed and set up according to their original documentation:
 
@@ -28,12 +39,12 @@ This tutorial assumes the following tools installed and set up according to thei
 - [The Zsh Agnoster theme](https://github.com/ohmyzsh/ohmyzsh/?tab=readme-ov-file#themes)
 - And of course [Beets](https://beets.readthedocs.io)
 
-### Beets should be
+### Beets Installation Details
 
 - installed from Git
 - running within Python virtual environments handled with pyenv (I generally only use one venv for all my setups)
 
-## Beets setup(s)
+## Where to put configuration files
 
 - configured via subdirectories in `~/.config/`, for example in my case I use
    - `~/.config/beets/config.yaml`  for my **prod** library,
@@ -43,7 +54,7 @@ This tutorial assumes the following tools installed and set up according to thei
 All of the described setup happens within the Zsh configuration file, usually `~/.zshrc`
 
 
-## $BEETSDIR
+### $BEETSDIR
 
 
 ## Custom Zsh prompt
