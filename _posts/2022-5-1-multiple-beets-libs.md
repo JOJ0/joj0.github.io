@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Beets Libraries on one machine?
+title: "Multiple Beets Libraries on one machine?"
 comments: true
 published: 2024-11-1
 image: /images/2022-5-1-multiple-beets-libs/beets_logo.png
@@ -156,6 +156,5 @@ bbook="export BEETSDIR=~/.config/bookbeets; pyenv activate beets311; cd ~/git/be
 To quit working/using Beets I also define a quit alias - actually I use it to quit _any_ `pyenv` controlled environment and the `b`-prefix is not perfectly appropriate - but who cares?.
 
 I hope this is of use to fellow Beeters. Please tell me what you think and also I'm very interested in your ideas of handling Beets environments!
-
 
 
