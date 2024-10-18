@@ -113,7 +113,6 @@ prompt_beets () {
         fi
 }
 ```
-t
 What this does is look up what config file is currently active according to `$BEETSDIR` and return a snippet defining how the prompt segment should look like. Play around with the two digits after `prompt_segment` to set fore- and background colors of the string displayed!
 
 As a nice additional feature, which is not only Beets-related, I personally like to have a fallback that tells me that I'm not in any virtual environment and the _system's Python installation_ is active. `1 0` here means an alerting red background and white as the foreground color.
@@ -128,7 +127,7 @@ FIXME screenshots
  (VirtualEnvName) > ~/we/are/here > master >
 ```
 
-to something like the following - we remove brackets, set a white background and black as the font color:
+to something like the following - we remove brackets, an change colors (yes you can use color names here too!):
 
 FIXME screenshots
 
