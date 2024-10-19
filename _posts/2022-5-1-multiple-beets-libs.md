@@ -127,11 +127,11 @@ FIXME screenshots
  (VirtualEnvName) > ~/we/are/here > master >
 ```
 
-to something like the following - we remove brackets, an change colors (yes you can use color names here too!):
+to something like the following - we remove brackets, and change colors (yes you can use color names here too!):
 
 FIXME screenshots
 
-We achieve this by overwriting the original prompt_virtualenv() function which is defined [here in the original code of the Agnoster theme]( https://github.com/ohmyzsh/ohmyzsh/blob/ab3d42a34cd0600b723de0accc248632f2dcf4e3/themes/agnoster.zsh-theme#L223-L228).
+We achieve this by overwriting the original prompt_virtualenv() function which is defined [here in the original code of the Agnoster theme](https://github.com/ohmyzsh/ohmyzsh/blob/ab3d42a34cd0600b723de0accc248632f2dcf4e3/themes/agnoster.zsh-theme#L223-L228).
 
 to this:
 
@@ -145,7 +145,7 @@ prompt_virtualenv() {
 
 ## Shell aliases for switching the active library
 
-We add an alias for each library in our `.zshrc`. If desired at this point we could also activate a specific virtual Python environment simultaneously using the `pyenv activate` command. Another conveniance feature I like is to directly jump to Beets' source code.
+We add an alias for each library in our `.zshrc`. If desired at this point we could also activate a specific virtual Python environment simultaneously using the `pyenv activate` command. Another conveniance feature I like is to directly jump to Beets source code.
 
 ```bash
 bprod="export BEETSDIR=~/.config/beets; pyenv activate beets310; cd ~/git/beets"
@@ -154,6 +154,10 @@ bbook="export BEETSDIR=~/.config/bookbeets; pyenv activate beets311; cd ~/git/be
 ```
 
 To quit working/using Beets I also define a quit alias - actually I use it to quit _any_ `pyenv` controlled environment and the `b`-prefix is not perfectly appropriate - but who cares?.
+
+```bash
+bquit="unset BEETSDIR; pyenv deactivate"
+```
 
 I hope this is of use to fellow Beeters. Please tell me what you think and also I'm very interested in your ideas of handling Beets environments!
 
