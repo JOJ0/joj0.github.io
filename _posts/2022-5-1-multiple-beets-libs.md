@@ -1,22 +1,21 @@
 ---
 layout: post
-title: Multiple Beets Libraries on one machine?
+title: Multiple Beets libraries on one machine?
 comments: true
 published: 2024-11-01
 image: /images/2022-5-1-multiple-beets-libs/beets_logo.png
-draft: false
+draft: true
 ---
+
+This article is about [Beets  - the best music library manager out there](https://github.com/beetbox/beets/blob/master/README.rst).
 
 {% include figure.html filename="/images/2022-5-1-multiple-beets-libs/beets_logo.png" alt_text="the Beets beetroot logo" caption="" width="20%" float="left" margin="4.5px 10px 0 0" img_style="border: 5px solid #303030;" %}
 
-This article is about [Beets  - the best music library manager out there](https://github.com/beetbox/beets/blob/master/README.rst). If you are a music collector who uses command-line tools but haven't discovered it yet, [watch this short demo video](https://beets.io) and read the [Getting Started Guide](https://beets.readthedocs.io/en/stable/guides/main.html).
+If you are a music collector who uses command-line tools but haven't discovered it yet, [watch this short demo video](https://beets.io) and read the [Getting Started Guide](https://beets.readthedocs.io/en/stable/guides/main.html).
 
-
-**This article is not a beginners guide. It describes an opinionated but handy setup for Beets developers and advanced users.**
-
+**This is not a beginners guide. It describes an opinionated but handy setup for Beets developers and advanced users.**
 
 Soon after I started contributing to the Beets project, I wanted to manage multiple Beets libraries installed within a single user account on my macOS and Linux machines. The initial goal was to find a way to quickly test new code or config settings and comfortably switch back to working in my production library. Later on I realized the setup's potential to even separate contentwise.
-
 
 ## Why more than one?
 
@@ -160,6 +159,5 @@ bquit="unset BEETSDIR; pyenv deactivate"
 ```
 
 I hope this is of use to fellow Beeters. Please tell me what you think and also I'm very interested in your ideas of handling Beets environments!
-
 
 
