@@ -2,7 +2,7 @@
 layout: post
 title: Multiple Beets Libraries on one machine?
 comments: true
-published: 2024-11-1
+published: 2024-11-01
 image: /images/2022-5-1-multiple-beets-libs/beets_logo.png
 draft: false
 ---
