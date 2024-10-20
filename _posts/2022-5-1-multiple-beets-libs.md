@@ -2,20 +2,22 @@
 layout: post
 title: Multiple Beets libraries on one machine?
 comments: true
-published: 2024-11-01
-image: /images/2022-5-1-multiple-beets-libs/beets_logo.png
-draft: true
+published: 2024-10-20
+image: /images/2022-5-1-multiple-beets-libs/01-th.jpg
+draft: false
 ---
 
-This article is about [Beets  - the best music library manager out there](https://github.com/beetbox/beets/blob/master/README.rst).
+This article is about [Beets  - the best music library manager out there](https://beets.io).
 
-{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/beets_logo.png" alt_text="the Beets beetroot logo" caption="" width="20%" float="left" margin="4.5px 10px 0 0" img_style="border: 5px solid #303030;" %}
+{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/01.jpg" alt_text="the Beets beetroot logo" caption="" width="23%" float="left" margin="4.5px 10px 0 0" img_style="border: 5px solid #303030;" %}
 
-If you are a music collector who uses command-line tools but haven't discovered it yet, [watch this short demo video](https://beets.io) and read the [Getting Started Guide](https://beets.readthedocs.io/en/stable/guides/main.html).
+If you are a music collector who uses command-line tools but haven't discovered it yet, [watch its demo video](https://beets.io) and read the [Getting Started Guide](https://beets.readthedocs.io/en/latest/guides/main.html).
 
-**This is not a beginners guide. It describes an opinionated but handy setup for Beets developers and advanced users.**
+Soon after I started contributing to the Beets project, I wanted to manage multiple Beets libraries installed within a single user account on my macOS and Linux machines. The initial goal was to find a way to quickly switch between testing new code or config settings and working in my main library. Later on I realized the setup's potential to also make life more comfortable when splitting different content types to separate libraries.
 
-Soon after I started contributing to the Beets project, I wanted to manage multiple Beets libraries installed within a single user account on my macOS and Linux machines. The initial goal was to find a way to quickly test new code or config settings and comfortably switch back to working in my production library. Later on I realized the setup's potential to even separate contentwise.
+&nbsp;
+
+<p style="text-align:center; font-style:italic; font-weight:bold;">This is not a beginners guide. It describes an opinionated setup for Beets developers and advanced users.</p>
 
 ## Why more than one?
 
@@ -32,11 +34,16 @@ This tutorial assumes the following tools installed and set up according to thei
 - [Zsh](https://www.zsh.org)
 - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/)
 - [pyenv](https://github.com/pyenv/pyenv)
-- [Zsh pyenv plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pyenv)
-- [The Zsh Agnoster theme](https://github.com/ohmyzsh/ohmyzsh/?tab=readme-ov-file#themes)
-- And of course [Beets](https://beets.readthedocs.io)
+- and of course [Beets](https://beets.readthedocs.io)
 
-Beets is assumed to be installed from Git and Python running within a `pyenv` controlled virtual environment.
+Beets is assumed to be installed from Git and Python running within a `pyenv` controlled virtual environment,
+
+and these _Zsh_ related things should be set up:
+
+- _Oh My Zsh_ plugins `git` and `virtualenv` active with their default settings
+- [Oh My Zsh pyenv plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pyenv) configured,
+- [Zsh Agnoster theme](https://github.com/ohmyzsh/ohmyzsh/?tab=readme-ov-file#themes) in use
+
 
 ## Where to put configuration files?
 
@@ -49,8 +56,7 @@ The [default location for the Beets config.yaml file](https://beets.readthedocs.
 
 ## Custom Zsh prompt
 
-**_All of the described setup happens within the Zsh configuration file, usually `~/.zshrc`_**
-
+**_All of the following setup happens within the Zsh configuration file, usually `~/.zshrc`_**
 
 ### $BEETSDIR
 
@@ -67,7 +73,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
-It's important that the oh-my-zsh pyenv plugin is loaded _after_ pyenv has been initialized, so let's put this line right below:
+It's important that the _Oh My Zsh_ pyenv plugin is loaded _after_ pyenv has been initialized, so let's put this line right below:
 
 ```bash
 plugins+=(pyenv)
@@ -114,25 +120,19 @@ prompt_beets () {
 ```
 What this does is look up what config file is currently active according to `$BEETSDIR` and return a snippet defining how the prompt segment should look like. Play around with the two digits after `prompt_segment` to set fore- and background colors of the string displayed!
 
-As a nice additional feature, which is not only Beets-related, I personally like to have a fallback that tells me that I'm not in any virtual environment and the _system's Python installation_ is active. `1 0` here means an alerting red background and white as the foreground color.
+So for example if `$BEETSDIR` is set to `~/.config/devbeets` we would get a prompt like this:
 
-### Customizing how the pyenv plugin alters the prompt
+{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/02.jpg" alt_text="" caption="" width="75%" %}
 
-Additionally we could change the original format of the virtualenv prompt, which looks like this
+As a nice additional feature, which is not only Beets-related, I personally like to have a fallback that tells me that I'm not in any virtual environment and the _system's Python installation_ is active. `1 0` here means an alerting red background and white as the foreground color. We'll find out how that looks like further below. No spoilers now :-P
 
-FIXME screenshots
+### Customizing how the virtualenv plugin alters the prompt
 
-```bash
- (VirtualEnvName) > ~/we/are/here > master >
-```
+Additionally we are changing the original format of the segment generated by the _Oh My Zsh_ `virtualenv` plugin. As we saw in the screenshot above it uses parentheses around the environment name and the same background color as the prompt. We want to remove parentheses and change colors:
 
-to something like the following - we remove brackets, and change colors (yes you can use color names here too!):
+{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/04.jpg" alt_text="" caption="" width="75%" %}
 
-FIXME screenshots
-
-We achieve this by overwriting the original prompt_virtualenv() function which is defined [here in the original code of the Agnoster theme](https://github.com/ohmyzsh/ohmyzsh/blob/ab3d42a34cd0600b723de0accc248632f2dcf4e3/themes/agnoster.zsh-theme#L223-L228).
-
-to this:
+We achieve this by overwriting the original `prompt_virtualenv()` function which is defined [here in the original code of the Agnoster theme](https://github.com/ohmyzsh/ohmyzsh/blob/ab3d42a34cd0600b723de0accc248632f2dcf4e3/themes/agnoster.zsh-theme#L223-L228). We can use literal color names too:
 
 ```bash
 prompt_virtualenv() {
@@ -144,20 +144,26 @@ prompt_virtualenv() {
 
 ## Shell aliases for switching the active library
 
-We add an alias for each library in our `.zshrc`. If desired at this point we could also activate a specific virtual Python environment simultaneously using the `pyenv activate` command. Another conveniance feature I like is to directly jump to Beets source code.
+We add an alias for each library in our `.zshrc`. If desired at this point we could also activate a specific virtual Python environment simultaneously using the `pyenv activate` command. Another convenience feature I like is to directly jump to Beets source code.
 
 ```bash
-bprod="export BEETSDIR=~/.config/beets; pyenv activate beets310; cd ~/git/beets"
 bdev="export BEETSDIR=~/.config/devbeets; pyenv activate beets311; cd ~/git/beet"
+bprod="export BEETSDIR=~/.config/beets; pyenv activate beets310; cd ~/git/beets"
 bbook="export BEETSDIR=~/.config/bookbeets; pyenv activate beets311; cd ~/git/beet"
 ```
+We saw the `dev` environment prompt above already - this is what we get if we now switch with `bprod` or `bbook`:
 
-To quit working/using Beets I also define a quit alias - actually I use it to quit _any_ `pyenv` controlled environment and the `b`-prefix is not perfectly appropriate - but who cares?.
+{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/03.jpg" alt_text="" caption="" width="75%" %}
+{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/05.jpg" alt_text="" caption="" width="75%" %}
+
+To quit working/using Beets I also define a quit alias - actually I use it to quit _any_ `pyenv` controlled environment and the `b`-prefix is not perfectly appropriate - but who cares?
 
 ```bash
 bquit="unset BEETSDIR; pyenv deactivate"
 ```
 
-I hope this is of use to fellow Beeters. Please tell me what you think and also I'm very interested in your ideas of handling Beets environments!
+So since `bquit` deactivates any Python virtual environment we'll fall back to alerting `sys-py` prompt we talked above:
 
+{% include figure.html filename="/images/2022-5-1-multiple-beets-libs/06.jpg" alt_text="" caption="" width="75%" %}
 
+I hope this is of use to fellow Beeters. Please tell me what you think! I'm very interested in your own ideas of handling multiple Beets environments and how this setup could be advanced further!
