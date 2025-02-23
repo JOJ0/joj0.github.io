@@ -4,80 +4,13 @@ title: Too Many Projects!
 permalink: /projects/
 ---
 
-Sometimes I don't even know myself how many projects I currently have in the
-backlog. This site is an overview of the most relevant things I am
-working on / am a part of.
+An overview of the most relevant things I am working on and the projectes I'm involved with.
 
 ## FOSS Projects
 
-I love **F**ree and **O**pen **S**ource **S**oftware. This is a list
-of projects I am directly involved with.
+I love **F**ree and **O**pen **S**ource **S**oftware. I created a separate website around my professional skillset that also hosts a list of Open Source projects I maintain and participate in:
 
-### python3-discogs-client
-
-A Python module for accessing the API provided by
-[https://discogs.com](https://discogs.com).
-Two other coders and me took over the abandoned github
-repo in June 2020. Discogs didn't have interest in maintaining the Python
-module anymore but a lot of record lovers that also code Python do! Currently we are 4 people actively maintaining the project.
-
-- [python3-discogs-client github repo](https://github.com/joalla/discogs_client)
-- [our github discussion board](https://github.com/joalla/discogs_client/discussions)
-- [our announcement thread on the official Discogs board](https://www.discogs.com/forum/thread/822690)
-- [latest releases / changelog](https://github.com/joalla/discogs_client/releases)
-
-### DiscoDOS
-
-A flexible CLI tool for managing a DJ's record collection and supporting them
-with selecting appropriate records for their mixes. DiscoDOS makes heavy use
-of above mentioned Python module. Head over to its website to read all about
-it.
-
-- [DiscoDOS website](https://discodos.jojotodos.net)
-- [DiscoDOS github repo](https://github.com/joj0/discodos)
-- [DiscoDOS documentation on readthedocs.org](https://discodos.readthedocs.io)
-- [latest releases / changelog](https://github.com/joj0/discodos/releases)
-
-### synadm
-
-synadm is a CLI tool to ease access to the administration API's of Synapse
-servers. Synapse is the reference "homeserver" implementation of the Matrix
-standard. Matrix is an open standard for interoperable, decentralised,
-real-time communication over IP. For details on the standard go to
-[https://matrix.org](https://matrix.org). For details on the number one
-multi-platform Matrix enduser client go to
-[https://element.io](https://element.io).
-
-Most of all: Matrix is a user-friendly chat and instant messaging system.
-There was no administration tool available for Synapse homeservers that
-suited my needs, thus I wrote one. Other Admins of such servers seem to welcome
-it quite frankly and it's recommended regularly on
-[#synapse:matrix.org - the main Synapse admin support chatroom](https://matrix.to/#/#synapse:matrix.org).
-
-
-Currently we are two people actively maintaining the project.
-
-- [synadm github repo](https://github.com/joj0/synadm)
-- [#synadm:peek-a-boo.at - the official public synadm chatroom](https://matrix.to/#/#synadm:peek-a-boo.at)
-- [latest releases / changelog](https://github.com/joj0/synadm/releases)
-- [open issues / feature requests](https://github.com/joj0/synadm/issues)
-- [#synapse:matrix.org - the Synapse admin support chatroom](https://matrix.to/#/#synapse:matrix.org)
-
-
-### beets
-
-A couple of months ago I joined the beets project to help maintain it. Beets
-is a super-sophisticated command line tool to tag and organize music files. It
-helps me bring my Python coding abilities to another level and thanks to the
-mentoring of the project owner and other project members it's always fun to
-submit to it.
-
-If you are into cli tools: Check it out. If you are a programmer: We need your
-help! There is so much things to do and potential to improve in that project!
-
-- [beets website](https://beets.io)
-- [beets github repo](https://github.com/beetbox/beets)
-
+- [about.jojotodos.net/projects/foss](https://about.jojotodos.net/projects/foss/)
 
 
 ## Music Projects
