@@ -39,7 +39,13 @@
     - [pyenv](#pyenv)
 
 # Introduction
-This is a **cheat sheet** and my personal **best practice collection** aimed at ongoing developers, DevOps engineers, sysadmins anyone else trying to get started with [Git](https://git-scm.com/). After roughly 10 years of using it myself and having successfully introduced quite a few fellow sysadmins and developers to it, I thought it's time for a write-up.
+This is a **cheat sheet** and my personal **best practice collection** aimed at ongoing developers, DevOps engineers, sysadmins and anyone anyone with a bit of experience in [Git](https://git-scm.com/) who wants to _really_ get started. After roughly 10 years of using it myself and having successfully introduced quite a few fellow sysadmins and developers to it, I thought it's time for a write-up.
+
+|  |
+| ---------------------- |
+|  **This is not another Git beginner's guide. There is loads of those out there. Use them if you are a complete beginner or re-read above's paragraph to make sure this is for you :-)** |
+
+&nbsp;
 
 Basically this document lists Git commands including `--options` I personally find most helpful and wish I'd known when I first got in to contact with Git.
 
