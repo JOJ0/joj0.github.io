@@ -3,7 +3,7 @@ layout: post
 title: DiscoDOS sells 3 times pretty
 comments: true
 published: 2025-03-07
-image: /images/2025-2-4-discodos3/shot01-th.jpg
+image: /images/2025-2-4-discodos3/shot01.jpg
 draft: false
 ---
 
