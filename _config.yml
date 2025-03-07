@@ -113,6 +113,8 @@ collections:
     output: true
   mach-drm:
     output: true
+  discodos3:
+    output: true
 
 defaults:
   - scope:
@@ -143,5 +145,10 @@ defaults:
   - scope:
       path: ""
       type: mach-drm
+    values:
+      layout: gallery-photo
+  - scope:
+      path: ""
+      type: discodos3
     values:
       layout: gallery-photo
