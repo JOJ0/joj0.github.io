@@ -31,8 +31,8 @@ layout: default
           {% if post.published %}
             Published: <time datetime="{{ post.published | date_to_xmlschema }}">{{ post.published | date: "%b %-d, %Y" }}</time>
           {% endif %}
-          {% if post.last_modified_at %}
-            -  Last updated: <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time>
+          {% if post.updated %}
+            -  Last updated: <time datetime="{{ post.updated | date_to_xmlschema }}">{{ post.updated | date: "%b %-d, %Y" }}</time>
           {% endif %}
           {% if post.published == nil %}
             Published: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
