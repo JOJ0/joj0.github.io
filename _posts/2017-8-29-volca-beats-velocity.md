@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Volca Beats learns MIDI Velocity
+title: Volca Beats learns MIDI-velocity
 comments: true
 published: 2018-02-24
 updated: 2018-02-25
